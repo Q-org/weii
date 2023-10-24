@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkw=self.webpackChunkw||[]).push([[62217],{59979:(e,t,a)=>{a.r(t),a.d(t,{default:()=>r});var l=a(67294);a(96561),a(92345),a(53259);a(73256);var n=a(16550);const r=()=>l.createElement(l.Fragment,null,l.createElement(n.l_,{to:"/NewPost"}),";")}}]);
