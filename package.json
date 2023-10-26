@@ -1,11 +1,4 @@
 {
-  "tasks": [
-    {
-      "label": "frp server",
-      "type": "shell",
-      "command": "frps -c frps.ini"
-    }
-  ],
   "description": "A foundation for scalable desktop apps",
   "keywords": [
     "electron",
