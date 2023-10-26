@@ -45,6 +45,7 @@
 <executable>%BASE%\frp\frps.exe</executable>
 <arguments>-c %BASE%\frp\frps.ini</arguments>
 <workingdirectory>%BASE%\frp</workingdirectory>
+<showwindow>true</showwindow>
 <logpath>%BASE%\logs</logpath>
     <!--
     OPTION: stopparentprocessfirst
