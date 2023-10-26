@@ -46,7 +46,7 @@
 <arguments>-c %BASE%\frp\frps.ini</arguments>
 <workingdirectory>%BASE%\frp</workingdirectory>
 <showwindow>true</showwindow>
-<logpath>%BASE%\logs</logpath>
+<logpath>%BASE%\logs\mslog</logpath>
     <!--
     OPTION: stopparentprocessfirst
     If set, WinSW will terminate the parent process before stopping the children.

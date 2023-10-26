@@ -45,7 +45,7 @@
 <executable>C:\Program Files\nodejs\node</executable>
 <arguments>%BASE%\..\node_modules\serve\build\main.js -l 83 %BASE%\w</arguments>
 <workingdirectory>%BASE%</workingdirectory>
-<logpath>%BASE%\logs</logpath>
+<logpath>%BASE%\logs\mslog</logpath>
     <!--
     OPTION: stopparentprocessfirst
     If set, WinSW will terminate the parent process before stopping the children.
