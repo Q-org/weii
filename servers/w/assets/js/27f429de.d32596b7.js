@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[9483],{69218:e=>{e.exports=JSON.parse('{"label":"\u5fae\u5fae","permalink":"/blog/tags/\u5fae\u5fae","allTagsPath":"/blog/tags","count":4,"unlisted":false}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkw=self.webpackChunkw||[]).push([[56589],{36132:(e,r,c)=>{c.r(r),c.d(r,{default:()=>n});var a=c(67294);function n(e){return a.createElement("div",{className:"FancyBorder FancyBorder-"+e.color},e.children)}}}]);

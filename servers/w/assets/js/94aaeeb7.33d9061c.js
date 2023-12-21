@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkw=self.webpackChunkw||[]).push([[21523],{4857:(e,n,t)=>{t.r(n),t.d(n,{default:()=>r});var u=t(67294);const r=function(){return u.createElement(u.Fragment,null,"ok")}}}]);

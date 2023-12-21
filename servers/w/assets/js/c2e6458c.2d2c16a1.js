@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkw=self.webpackChunkw||[]).push([[71],{11305:a=>{a.exports=JSON.parse('{"label":"pwa","permalink":"/blog/tags/pwa","allTagsPath":"/blog/tags","count":4}')}}]);

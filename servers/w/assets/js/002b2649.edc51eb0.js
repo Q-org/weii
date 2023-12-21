@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[9116],{85254:(e,n,r)=>{r.r(n),r.d(n,{default:()=>t});r(67294);var s=r(85893);const t=function(){return(0,s.jsx)(s.Fragment,{children:"ok"})}}}]);
