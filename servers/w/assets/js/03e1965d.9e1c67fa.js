@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[3574],{72131:e=>{e.exports=JSON.parse('{"hello":["Hello from my plugin"]}')}}]);

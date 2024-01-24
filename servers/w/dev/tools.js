@@ -144,7 +144,7 @@ var t;
                 function executeMethod(methodName) {
                     return (props) => {
                         if (methods.hasOwnProperty(methodName)) {
-                            console.log(`执行 ${methodName} 方法`);
+//                             console.log(`执行 ${methodName} 方法`);
                             try {
                                 methods[methodName](props);
                             } catch (err) {
@@ -167,7 +167,7 @@ var t;
                                                   "请尝试重新执行或联系技术支持",
                                               );
                             } finally {
-                                console.log("完成 ${methodName} 方法的执行");
+//                                 console.log("完成 ${methodName} 方法的执行");
                             }
                         } else console.error(`未定义的方法：${methodName}`);
                     };
@@ -274,7 +274,7 @@ var t;
                 console.error(error),
                     alert("抱歉，发生了一些错误，请稍后再试。");
             } finally {
-                console.log("函数执行完毕。");
+//                 console.log("函数执行完毕。");
             }
         })();
     })(),
