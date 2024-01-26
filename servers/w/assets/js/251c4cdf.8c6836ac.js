@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[6675],{47134:(e,u,a)=>{a.r(u),a.d(u,{default:()=>s});var i=a(25108);function s(){i.log("api")}}}]);
