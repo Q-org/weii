@@ -71,26 +71,26 @@
         <id>https://qio.wiki/blog/mdx-blog-post</id>
         <link href="https://qio.wiki/blog/mdx-blog-post"/>
         <updated>2023-04-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<!-- truncate]]></summary>
+        <summary type="html"><![CDATA[可重用]]></summary>
         <content type="html"><![CDATA[<h2 id="可重用">可重用</h2>
 <admonition type="info"><blockquote>
-<p>通过通知推送提高<a href="https://qio.wiki/"><em><strong>微微</strong></em></a> 的可重用。</p>
+<p>通过通知推送提高<a href="https://qio.wiki/"><strong><em>微微</em></strong></a> 的可重用。</p>
 </blockquote></admonition>
 <p>以本地缓存实现离线应用是一个强大的特性。允许用户在主屏幕上安装 Web 应用程序则显得更了不起。但除了单纯依赖用户手动打开应用之外，我们还可以走得更远，利用通知和消息推送提高用户参与度，并且随时提供新的内容。</p>
-<h2 id="两个api一个目标">两个API一个目标</h2>
-<p>推送 API和通知 API是两个相互独立的 API，但在提高用户参与度这件事上，它们可以配合得很好。推送 API 可以用来从服务端推送新的内容而无需客户端介入，它是由应用的 Service Worker 来实现的；通知功能则可以通过 Service Worker 来向用户展示一些新信息，或者至少提醒用户应用已经更新了某些功能。</p>
+<h2 id="两个-api-一个目标">两个 API 一个目标</h2>
+<p>推送 API 和通知 API 是两个相互独立的 API，但在提高用户参与度这件事上，它们可以配合得很好。推送 API 可以用来从服务端推送新的内容而无需客户端介入，它是由应用的 Service Worker 来实现的；通知功能则可以通过 Service Worker 来向用户展示一些新信息，或者至少提醒用户应用已经更新了某些功能。</p>
 <p>跟 Service Worker 一样，这些工作是在浏览器外部实现的，所以即使应用被隐藏到后台甚至被关闭了，我们仍然能够推送更新或者通知给用户。</p>
 <h2 id="通知">通知</h2>
 <p>让我们先从通知 API 开始，它能够脱离推送 API 单独工作，但两者结合起来会非常的有用，我们先看看它单独能做什么。</p>
 <h3 id="请求授权">请求授权</h3>
 <p>为了能够显示通知，我们需要先请求用户的授权。最佳的实践经验告诉我们，不应该直接请求授权，而应该引导用户点击一个按钮，然后才弹出授权窗口：</p>
 <pre><code class="language-jsx">var button = document.getElementById("notifications");
-button.addEventListener('click', function(e) {
-    Notification.requestPermission().then(function(result) {
-        if(result === 'granted') {
-            randomNotification();
-        }
-    });
+button.addEventListener("click", function (e) {
+  Notification.requestPermission().then(function (result) {
+    if (result === "granted") {
+      randomNotification();
+    }
+  });
 });
 </code></pre>
 <admonition type="tip"><p>通过系统的通知服务显示一个授权窗口: </p><style data-emotion="css y8omzx">.css-y8omzx{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;letter-spacing:0.02857em;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:var(--mui-shape-borderRadius);-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:var(--mui-palette-primary-main);}.css-y8omzx:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity));}@media (hover: none){.css-y8omzx:hover{background-color:transparent;}}.css-y8omzx.Mui-disabled{color:var(--mui-palette-action-disabled);}</style><style data-emotion="css 1vucaqb">.css-1vucaqb{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;letter-spacing:0.02857em;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:var(--mui-shape-borderRadius);-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:var(--mui-palette-primary-main);}.css-1vucaqb::-moz-focus-inner{border-style:none;}.css-1vucaqb.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1vucaqb{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1vucaqb:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity));}@media (hover: none){.css-1vucaqb:hover{background-color:transparent;}}.css-1vucaqb.Mui-disabled{color:var(--mui-palette-action-disabled);}</style><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium button button--danger css-1vucaqb" tabindex="0" type="button">Boom!</button><p></p></admonition>
@@ -98,25 +98,25 @@ button.addEventListener('click', function(e) {
 <h3 id="创建一个通知">创建一个通知</h3>
 <p>我们的示例应用通过可用的数据来创建通知。随机选择一个游戏数据来填充通知的主体：用游戏的名称来作为通知的标题，通知的主体会提及游戏的作者，用游戏的图片来作为通知的图标：</p>
 <pre><code class="language-jsx">function randomNotification() {
-    var randomItem = Math.floor(Math.random()*games.length);
-    var notifTitle = games[randomItem].name;
-    var notifBody = 'Created by '+games[randomItem].author+'.';
-    var notifImg = 'data/img/'+games[randomItem].slug+'.jpg';
-    var options = {
-        body: notifBody,
-        icon: notifImg
-    }
-    var notif = new Notification(notifTitle, options);
-    setTimeout(randomNotification, 30000);
+  var randomItem = Math.floor(Math.random() * games.length);
+  var notifTitle = games[randomItem].name;
+  var notifBody = "Created by " + games[randomItem].author + ".";
+  var notifImg = "data/img/" + games[randomItem].slug + ".jpg";
+  var options = {
+    body: notifBody,
+    icon: notifImg,
+  };
+  var notif = new Notification(notifTitle, options);
+  setTimeout(randomNotification, 30000);
 }
 </code></pre>
-<admonition type="tip"><p>通过系统的通知服务显示一个授权窗口: </p><style data-emotion="css y8omzx">.css-y8omzx{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;letter-spacing:0.02857em;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:var(--mui-shape-borderRadius);-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:var(--mui-palette-primary-main);}.css-y8omzx:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity));}@media (hover: none){.css-y8omzx:hover{background-color:transparent;}}.css-y8omzx.Mui-disabled{color:var(--mui-palette-action-disabled);}</style><style data-emotion="css 1vucaqb">.css-1vucaqb{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;letter-spacing:0.02857em;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:var(--mui-shape-borderRadius);-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:var(--mui-palette-primary-main);}.css-1vucaqb::-moz-focus-inner{border-style:none;}.css-1vucaqb.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1vucaqb{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1vucaqb:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity));}@media (hover: none){.css-1vucaqb:hover{background-color:transparent;}}.css-1vucaqb.Mui-disabled{color:var(--mui-palette-action-disabled);}</style><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium button button--danger css-1vucaqb" tabindex="0" type="button">Boom!</button><p></p></admonition>
+<admonition type="tip"><p>通过系统的通知服务显示一个授权窗口:999</p><style data-emotion="css y8omzx">.css-y8omzx{font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;letter-spacing:0.02857em;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:var(--mui-shape-borderRadius);-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:var(--mui-palette-primary-main);}.css-y8omzx:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity));}@media (hover: none){.css-y8omzx:hover{background-color:transparent;}}.css-y8omzx.Mui-disabled{color:var(--mui-palette-action-disabled);}</style><style data-emotion="css 1vucaqb">.css-1vucaqb{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;background-color:transparent;outline:0;border:0;margin:0;border-radius:0;padding:0;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:middle;-moz-appearance:none;-webkit-appearance:none;-webkit-text-decoration:none;text-decoration:none;color:inherit;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:500;font-size:0.875rem;line-height:1.75;letter-spacing:0.02857em;text-transform:uppercase;min-width:64px;padding:6px 8px;border-radius:var(--mui-shape-borderRadius);-webkit-transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;color:var(--mui-palette-primary-main);}.css-1vucaqb::-moz-focus-inner{border-style:none;}.css-1vucaqb.Mui-disabled{pointer-events:none;cursor:default;}@media print{.css-1vucaqb{-webkit-print-color-adjust:exact;color-adjust:exact;}}.css-1vucaqb:hover{-webkit-text-decoration:none;text-decoration:none;background-color:rgba(var(--mui-palette-primary-mainChannel) / var(--mui-palette-action-hoverOpacity));}@media (hover: none){.css-1vucaqb:hover{background-color:transparent;}}.css-1vucaqb.Mui-disabled{color:var(--mui-palette-action-disabled);}</style><button class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium button button--danger css-1vucaqb" tabindex="0" type="button">Boom!</button></admonition>
 <p>上述代码每隔三十秒会创建一个通知，直到用户觉得通知有点烦人并手动关闭掉它为止。一个真正的 App，对通知的频率必须进行严格的控制，通知内容也要更加有用才行。通知 API 的优势在于它使用了操作系统的通知功能，这意味着即使用户当前并没有在使用我们的应用，我们的通知也能够展示，它看起来跟一个原生应用发出的通知差不多。</p>
 <h2 id="推送">推送</h2>
 <p>推送比通知要复杂一些，我们需要从服务端订阅一个服务，之后服务端会推送数据到客户端应用。应用的 Service Worker 将会接收到从服务端推送的数据，这些数据可以用来做通知推送，或者实现其他的需求。</p>
 <p>这个技术还处在非常初级的阶段，一些可用示例使用了谷歌云的消息推送平台，但它们正在被重写以支持 VAPID (Voluntary Application Identification)，它能为您的应用提供一层额外的安全防护。您可以看一下 Service Workers Cookbook 里的一些例子，尝试用 Firebase 配置一个消息推送服务，或者构建自己的推送服务（例如使用 Node.js）。</p>
 <p>之前提到，为了接收到推送的消息，您需要有一个 Service Worker，这部分的基础知识我们已经在文章通过 Service workers 让 PWA 离线工作 (en-US)里面解释过。在 Service Worker 内部，存在一个消息推送服务订阅机制。</p>
-<pre><code class="language-jsx">registration.pushManager.getSubscription() .then( /* ... */ );
+<pre><code class="language-jsx">registration.pushManager.getSubscription().then(/* ... */);
 </code></pre>
 <p>App 会从服务器请求一个公钥并且把响应结果转化成文本，最后它还需要转化成一个 Uint8Array（为了兼容 Chrome）。如果你想学习更多关于 VAPID 的内容可以阅读 <a href="https://blog.mozilla.org/services/2016/08/23/sending-vapid-identified-webpush-notifications-via-mozillas-push-service/">Sending VAPID identified WebPush Notifications via Mozilla’s Push Service</a> 这篇文章。</p>
 <p>App 现在可以使用 PushManager 来订阅新用户。这个方法支持传递两个参数：</p>
@@ -161,7 +161,6 @@ button.addEventListener('click', function(e) {
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
         <author>
             <name>q-org</name>
-            <uri>https://github.com/q-org</uri>
         </author>
         <category label="微微" term="微微"/>
         <category label="pwa" term="pwa"/>

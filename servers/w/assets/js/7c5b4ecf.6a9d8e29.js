@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_wei_w=self.webpackChunk_wei_w||[]).push([[964],{59685:e=>{e.exports=JSON.parse('{"name":"helloPlugin","id":"default"}')}}]);

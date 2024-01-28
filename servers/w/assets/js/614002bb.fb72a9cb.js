@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_wei_w=self.webpackChunk_wei_w||[]).push([[5497],{42086:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/pwa","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

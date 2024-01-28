@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_wei_w=self.webpackChunk_wei_w||[]).push([[3198],{43486:(e,i,s)=>{s.r(i),s.d(i,{default:()=>r});s(2784);var l=s(52322);function r(e){let{hello:i}=e;if(i)return(0,l.jsxs)("div",{children:["there are ",JSON.stringify(i.hello?.join(","))," message"]})}}}]);

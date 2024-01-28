@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_wei_w=self.webpackChunk_wei_w||[]).push([[6675],{15144:(e,u,w)=>{w.r(u),w.d(u,{default:()=>i});var a=w(23716);function i(){a.log("api")}}}]);

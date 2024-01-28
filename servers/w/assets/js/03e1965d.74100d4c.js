@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_wei_w=self.webpackChunk_wei_w||[]).push([[3574],{64438:e=>{e.exports=JSON.parse('{"hello":["Hello from my plugin"]}')}}]);
