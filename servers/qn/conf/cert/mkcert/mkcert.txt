@@ -1,0 +1,2 @@
+./mkcert.exe qio  192.168.1.5 localhost 127.0.0.1 ::1
+./mkcert.exe --install
