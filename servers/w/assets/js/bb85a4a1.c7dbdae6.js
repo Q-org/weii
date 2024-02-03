@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[3198],{62864:(e,i,l)=>{l.r(i),l.d(i,{default:()=>s});l(67294);var r=l(85893);function s(e){var i,l=e.hello;if(l)return(0,r.jsxs)("div",{children:["there are ",JSON.stringify(null==(i=l.hello)?void 0:i.join(","))," message"]})}}}]);

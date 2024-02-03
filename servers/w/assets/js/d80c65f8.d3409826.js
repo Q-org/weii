@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[7945],{26869:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/\u901a\u77e5","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[964],{2634:e=>{e.exports=JSON.parse('{"name":"helloPlugin","id":"default"}')}}]);
