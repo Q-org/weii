@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 业务配置信息 -->
+	<include file="struts/byh_struts.xml" />
+	<include file="struts/kz_struts.xml" />
+	<include file="struts/lx_struts.xml"/>
+	<include file="struts/ywl_struts.xml"/>
+	<include file="struts/zt_struts.xml"/>
+	<include file="struts/cy_struts.xml" /> 
+    <include file="struts/muti_struts.xml"/>	
+</struts>    

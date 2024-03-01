@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 设置上传临时目录，及文件大小限制 Alan -->
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+	<constant name="struts.multipart.maxSize" value="188743680" />
+	<!--
+		使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定.
+	-->
+	<!-- 国际化 -->
+	<constant name="struts.custom.i18n.resources" value="struts/frameworkResource"></constant>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<!-- struts.devMode属性，配置启用调试，将有更多的错误信息输出，便于排错Alan -->
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.multipart.maxSize" value="188743680" />
+	<!-- 设置默认的父包,default包继承自struts-default -->
+	<constant name="struts.convention.default.parent.package"
+		value="framework-default" />
+	<!-- 只要是结尾为action的包都要搜索 -->
+	<constant name="struts.convention.package.locators" value="action" />
+	<constant name="struts.convention.result.path" value="/web/" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.convention.action.name.separator"
+		value="_" />
+	<package name="struts2" extends="struts-default">
+   		<action name="ExpCoursewareCellsAction" class="mse.action.ExpCoursewareCellsAction" method="uploadFile">
+   		</action>
+    </package>
+		
+	<package name="framework-default"
+		extends="convention-default,ssl-default,json-default,jasperreports-default">
+		
+		<interceptors>
+			<!-- 自定义拦截器配置 -->
+			<interceptor name="privilege"
+				class="mse.common.interceptor.PrivilegeInterceptor">
+			</interceptor>
+			<!-- 重复登录  reLogin的值为true就可以重复登录，如果为false就不允许重复登录-->
+			<interceptor name="reLogin"
+				class="mse.common.interceptor.ReLoginInterceptor">
+				<param name="userNameField">sysUserVo.userName</param>
+			</interceptor>
+			<!-- 拦截器栈,defaultStack是struts默认的拦截器 -->
+			<interceptor-stack name="privilegeStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack">
+					<param name="validation.validateAnnotatedMethodOnly">true</param>
+				</interceptor-ref>
+				<interceptor-ref name="privilege">
+					<param name="excludeMethods">doQueryBackInfoTree,backBillInfoFlses,getExpParameterAll,login,loginFls,logoutFls,loginSSL,verification,loginOut,toDownload,getFile,downloadFile,doQueryByReferencedIdAndUniqueId,downLoadMob</param>
+				</interceptor-ref>
+				<!--
+					<interceptor-ref name="secure"> <param
+					name="useAnnotations">false</param> </interceptor-ref>
+				-->
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="privilegeStack"></default-interceptor-ref>
+		<default-action-ref name="error">
+		</default-action-ref>
+		
+		<global-results>
+			<result name="exception">/web/error.jsp</result>
+			<result name="login">/web/login.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping name="exception" result="exception"
+				exception="mse.common.exception.FrameworkException,java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	<include file="struts/mse_struts.xml" />
+</struts>    

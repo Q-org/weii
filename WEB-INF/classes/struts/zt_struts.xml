@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="expExpClass" extends="framework-default">
+		<!-- 根据当前用户取得课程信息 -->
+		<action name="doQueryExpClassOfStu" class="mse.action.ExpExperimentClassStudentAction" method="doQueryExpClassOfStu">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expExpClassVos.*</param>
+			</result>
+		</action>
+		<!-- 根据当前用户取得当前时间课程信息 -->
+		<action name="doQueryExpClassByDate" class="mse.action.ExpExperimentClassStudentAction" method="doQueryExpClassByDate">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expExpClassVos.*</param>
+			</result>
+		</action>
+		<!-- ****************班级板块 ****************** -->
+		<!-- 获取所有班级列表 -->
+		<action name="doQueryAllClass" class="mse.action.ExpClassAction" method="doQueryAllClass">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^children.*,^data.*,^attr.*,^expClassVos.*</param>
+			</result>
+		</action>
+
+		<action name="getClassData" class="mse.action.ExpClassAction"
+			method="getClassData">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^children.*,^data.*,^attr.*,^expClassVos.*,^message.*</param>
+			</result>
+		</action>		
+		
+		<action name="doQueryAllCurriculumClass" class="mse.action.ExpClassAction" method="doQueryAllCurriculumClass">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</action>		
+		
+		
+		
+		
+		<!-- 新增或修改班级信息 -->
+		<action name="doSaveOrUpdateClass" class="mse.action.ExpClassAction" method="doSaveOrUpdateClass">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="root">message</param>
+			</result>
+		</action>
+		<!-- 查看某个指定的班级信息 -->
+		<action name="doSelectOneClass" class="mse.action.ExpClassAction" method="doSelectOneClass">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^expClassVo.*</param>
+			</result>
+		</action>
+		<!-- 删除指定班级信息 -->
+		<action name="doDeleteClass" class="mse.action.ExpClassAction" method="doDeleteClass">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*</param>
+			</result>
+		</action>
+		
+		<!--**********************  学生板块    ********************** -->
+		<!-- 根据查询条件查询学生列表 -->
+		<action name="doQueryClsStusByCondition" class="mse.action.ExpClassStudentAction" method="doQueryClsStusByCondition">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^pageBean.*,^expClsStuList.*</param>
+			</result>
+		</action>
+		<!-- 增加或修改学生信息 -->
+		<action name="doSaveOrUpdateStu" class="mse.action.ExpClassStudentAction" method="doSaveOrUpdateStu">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*</param>
+			</result>
+		</action>
+		<!-- 获取某个学生信息 -->
+		<action name="doSelectOneStu" class="mse.action.ExpClassStudentAction" method="doSelectOneStu">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuVo.*,^responseStatus.*,^expStuVo.*</param>
+			</result>
+		</action>
+		<!-- 删除学生 -->
+		<action name="doDeleteStu" class="mse.action.ExpClassStudentAction" method="doDeleteStu">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*,</param>
+			</result>
+		</action>
+		<!-- <action name="uploadAndReadExcelByStu" class="mse.action.ExpClassStudentAction" method="uploadAndReadExcelByStu">
+        	<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*,</param>
+			</result>
+        </action>-->
+		<action name="uploadAndReadExcelByStu" class="mse.action.ExpClassStudentAction" method="uploadAndReadExcelByStu">
+		   <!-- 限制上传的文件的大小，在struts-default.xml中我们可能找到一个fileUpload拦截器 -->
+		   <interceptor-ref name="fileUpload">
+		   	<param name="maximumSize">20971500</param>
+		   </interceptor-ref>
+		   <!-- 加上默认拦截器 -->
+			<interceptor-ref name="fileUploadStack" />		
+			<result type="json" name="success">		
+				<param name="contentType">text/xml</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*</param>		
+			</result>
+			<result type="json" name="error">
+			 	<param name="contentType">text/xml</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*</param>		
+			</result>
+        </action>
+        
+		<action name="importExcelEnter" class="mse.action.ExpClassStudentAction" method="importExcelEnter">
+		   <!-- 限制上传的文件的大小，在struts-default.xml中我们可能找到一个fileUpload拦截器 -->
+		   <interceptor-ref name="fileUpload">
+		   	<param name="maximumSize">20971500</param>
+		   </interceptor-ref>
+		   <!-- 加上默认拦截器 -->
+			<interceptor-ref name="fileUploadStack" />		
+			<result type="json" name="success">		
+				<param name="contentType">text/xml</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*</param>		
+			</result>
+			<result type="json" name="error">
+			 	<param name="contentType">text/xml</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*</param>		
+			</result>
+        </action>
+        
+		<action name="excelImport" class="mse.action.AccMissionBackInformationAction" method="excelImport">
+		   <!-- 限制上传的文件的大小，在struts-default.xml中我们可能找到一个fileUpload拦截器 -->
+		   <interceptor-ref name="fileUpload">
+		   	<param name="maximumSize">20971500</param>
+		   </interceptor-ref>
+		   <!-- 加上默认拦截器 -->
+			<interceptor-ref name="fileUploadStack" />		
+			<result type="json" name="success">		
+				<param name="contentType">text/xml</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*</param>		
+			</result>
+			<result type="json" name="error">
+			 	<param name="contentType">text/xml</param>
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^responseStatus.*</param>		
+			</result>
+        </action>                   
+        
+	</package>
+</struts>

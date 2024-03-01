@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="mse.action" extends="framework-default">
+		<action name="login" class="mse.action.SysUserAction" method="login">
+			<result name="input">/web/login.jsp</result>
+			<result name="success">/web/filter/main.jsp</result>
+		</action>
+		<action name="loginFls" class="mse.action.SysUserAction"
+			method="loginFls">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*,^rolseId.*</param>
+			</result>
+		</action>
+		<!-- 退出,【V3、V5改logout】-->
+		<action name="logout" class="mse.action.SysUserAction" method="logout">
+			<result name="login">/web/login.jsp</result>
+		</action>
+		<action name="logoutFls" class="mse.action.SysUserAction"
+			method="logoutFls">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties"></param>
+			</result>
+		</action>
+		<action name="flsLogin2Web" class="mse.action.SysUserAction"
+			method="flsLogin2Web">
+			<result name="success">/web/filter/mainFls.jsp</result>
+		</action>
+		<action name="findLoginUserFls" class="mse.action.SysUserAction"
+			method="findLoginUserFls">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^sysUserVo.*</param>
+			</result>
+		</action>
+		<action name="loginout" class="mse.action.SysUserAction"
+			method="logout">
+			<result name="login">/web/loginFls.jsp</result>
+		</action>
+		<!-- 导航退出,【V3、V5改 exitLogin】-->
+		<action name="exitLogin" class="mse.action.SysUserAction" method="logout">
+			<result name="login">/web/login.jsp</result>
+		</action>
+		<action name="doUpdateTea" class="mse.action.ExpTeacherAction"
+			method="doUpdateTea">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*</param>
+			</result>
+		</action>
+		<action name="loginMenu" class="mse.action.SysUserAction" method="loginMenu">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^menulist.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="findAllSysMenus" class="mse.action.SysUserAction"
+		 method="findAllSysMenus">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^children.*,^data.*,^attr.*</param>			
+			</result>
+		</action>
+		<action name="doUpdateInfo" class="mse.action.PersonInfoAction"
+			method="doUpdateInfo">
+			<result name="success">/web/filter/sys_user/sys_student_edit_new.jsp</result>
+		</action>
+		<action name="doUpdateClassStudentNew" class="mse.action.PersonInfoAction"	
+				method="doUpdateClassStudentNew">			
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>		
+		</action>
+		<action name="doUpdate" class="mse.action.PersonInfoAction"	
+				method="doUpdate">			
+			<result name="sys_user_edit">/web/filter/sys_user/sys_user_edit_new.jsp</result>	
+			<result name="sys_teacher_edit">/web/filter/sys_user/sys_teacher_edit.jsp</result>
+			<result name="sys_student_edit_new">/web/filter/sys_user/sys_student_edit_new.jsp</result>	
+		</action>
+		<action name="toUpdate" class="mse.action.PersonInfoAction"	
+				method="toUpdate">			
+			<result name="success" type="chain">
+			  doUpdate
+			</result>	
+		</action>
+		<action name="doUpdatePassword" class="mse.action.PersonInfoAction"	
+				method="doUpdatePassword">			
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,^newPassword.*</param>			
+			</result>
+		</action>
+		<action name="toUpdatePassword" class="mse.action.PersonInfoAction"	
+				method="toUpdatePassword">			
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^sysUserVo.*</param>			
+			</result>	
+		</action>
+		
+		<action name="createMenuDtree" class="mse.action.ExpCoursesNodeAction"
+		 method="createMenuDtree">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^children.*,^data.*,^attr.*</param>			
+			</result>
+		</action>
+		<action name="doStuQuery" class="mse.action.ExpCoursewareCellsAction"
+		 method="doStuQuery">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listExpCoursewareCells.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="findbill" class="mse.action.BillListAction"
+		 method="findbill">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^children.*,^data.*,^attr.*,^userType.*</param>			
+			</result>
+		</action>	
+		<action name="billHelp" class="mse.action.BillListAction"
+		 method="billHelp">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^acc.*,^Acc.*</param>			
+			</result>
+		</action>				
+		<action name="doTest" class="mse.action.TestThemeAction"
+		 method="doTest">	
+			<result name="success">/web/filter/test_theme/test_theme_stu.jsp</result>
+		</action>
+		<action name="selectTest" class="mse.action.TestThemeAction"
+		 method="selectTest">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^testTestThemeListList.*,^pageBean.*,^error.*</param>			
+			</result>
+		</action>
+		<action name="selectTestYing" class="mse.action.TestThemeAction"
+		 method="selectTestYing">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^testTestThemeListList.*,^pageBean.*,^error.*</param>			
+			</result>
+		</action>
+		<action name="doSubmit" class="mse.action.TestThemeAction"
+		 method="doSubmit">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listTestThemeListVo.*,^listTestThemeStuAnsVo.*,^error.*,^grade.*,^total.*,^message.*</param>			
+			</result>
+		</action>
+		
+		<action name="selectCourses" class="mse.action.ExpCoursesNodeAction"
+		 method="selectCourses">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^list.*,^pageBean.*,^classNo.*,^expId.*,^coursesNo.*,^list1.*,^error.*</param>			
+			</result>
+		</action>
+		
+		<action name="selectTeacherComplex" class="mse.action.ExpCoursesNodeAction"
+		 method="selectTeacherComplex">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^coursesNo.*,^list1.*,^error.*,^jsonStr.*</param>			
+			</result>
+		</action>				
+		
+		<action name="selectduanyuan" class="mse.action.ExpCoursesNodeAction"
+		 method="selectduanyuan">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^list.*,^pageBean.*,^classNo.*,^expId.*,^courseNodeId.*</param>			
+			</result>
+		</action>	
+		
+		<action name="doQueryCourses" class="mse.action.ExpCoursesAction"
+		 method="doQueryCourses">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^expCoursesVoList.*,^pageBean.*</param>			
+			</result>
+		</action>	
+		
+		<action name="doDeleteCourses" class="mse.action.ExpCoursesAction"
+		 method="doDeleteCourses">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,</param>			
+			</result>
+		</action>	
+		<action name="doUpdateCourses" class="mse.action.ExpCoursesAction"
+		 method="doUpdateCourses">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,</param>			
+			</result>
+		</action>	
+		<action name="switchCourseListPost" class="mse.action.ExpCoursesAction"
+		 method="switchCourseListPost">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,</param>			
+			</result>
+		</action>			
+		
+		<action name="toAddExpCalss" class="mse.action.ExpExperimentClassAction"
+		 method="toAddExpCalss">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^expCoursesVoList.*,^sysUserVo.*,^error.*</param>			
+			</result>
+		</action>	
+		
+		<action name="doAddExp" class="mse.action.ExpExperimentClassAction"
+		 method="doAddExp">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^error.*,^result.*</param>			
+			</result>
+		</action>	
+		<action name="doQueryExpCourses" class="mse.action.ExpExperimentClassAction"
+		 method="doQueryExpCourses">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^voList.*,^expCoursesVoList.*,^pageBean.*,^listAllclass.*</param>			
+			</result>
+		</action>	
+		
+		
+		<action name="getClassNoList" class="mse.action.ExpExperimentClassAction"
+		 method="getClassNoList">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^voList.*,^expCoursesVoList.*,^pageBean.*,^message.*</param>			
+			</result>
+		</action>			
+		
+		<action name="doSelectExp" class="mse.action.ExpExperimentClassAction"
+		 method="doSelectExp">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^voList.*,^pageBean.*</param>			
+			</result>
+		</action>	
+		
+		<action name="toUpdateExp" class="mse.action.ExpExperimentClassAction"
+		 method="toUpdateExp">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^expExperimentClassVo.*,^expCoursesVoList.*</param>			
+			</result>	
+		</action>	
+		<action name="doUpdateExp" class="mse.action.ExpExperimentClassAction"
+		 method="doUpdateExp">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^result.*</param>			
+			</result>	
+		</action>	
+		<action name="doDeleteExpClassByClassNo" class="mse.action.ExpExperimentClassAction"
+		 method="doDeleteExpClassByClassNo">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^result.*</param>			
+			</result>	
+		</action>
+		<action name="doQueryExpClass" class="mse.action.ExpExperimentClassStudentAction"
+		 method="doQueryExpClass">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listExpClass.*,^pageBean.*</param>			
+			</result>	
+		</action>
+		
+		<action name="getStuClassData" class="mse.action.ExpExperimentClassStudentAction"
+		 method="getStuClassData">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		
+		<action name="addGroup" class="mse.action.ExpExperimentClassStudentAction"
+		 method="addGroup">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		
+		<action name="deleteGroup" class="mse.action.ExpExperimentClassStudentAction"
+		 method="deleteGroup">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		
+		<action name="queryPost" class="mse.action.ExpExperimentClassStudentAction"
+		 method="queryPost">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		
+		<action name="updataStuPost" class="mse.action.ExpExperimentClassStudentAction"
+		 method="updataStuPost">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		
+		<action name="getP2dataAll" class="mse.action.ExpExperimentClassStudentAction"
+		 method="getP2dataAll">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>		
+			
+		<action name="doQueryAllExpClassStu" class="mse.action.ExpExperimentClassStudentAction"
+		 method="doQueryAllExpClassStu">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listexpclassstu.*,^pageBean.*</param>			
+			</result>	
+		</action>	
+		
+		<action name="doAddClassStudentToExpExperimentClass" class="mse.action.ExpExperimentClassStudentAction"
+		 method="doAddClassStudentToExpExperimentClass">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>	
+		<action name="doDeleteExp" class="mse.action.ExpExperimentClassStudentAction"
+		 method="doDeleteExp">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		<action name="doQueryExpDiff" class="mse.action.ExpDifficultyAction"
+		 method="doQueryExpDiff">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^expDifficultyVoList.*,^pageBean.*</param>			
+			</result>	
+		</action>
+		<action name="doUpdateDif" class="mse.action.ExpDifficultyAction"
+		 method="doUpdateDif">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		<action name="AddMenuDtree" class="mse.action.ExpCoursesNodeAction"
+		 method="AddMenuDtree">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^children.*,^data.*,^attr.*</param>			
+			</result>
+		</action>
+		<action name="doAddSection" class="mse.action.ExpCoursesNodeAction"
+		 method="doAddSection">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		<action name="doDeleteExpNode" class="mse.action.ExpCoursesNodeAction"
+		 method="doDeleteExpNode">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		<action name="doAddAccMission" class="mse.action.AccMissionAction"
+		 method="doAddAccMission">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,^referencedId.*</param>			
+			</result>	
+		</action>
+		<action name="deleteAccMission" class="mse.action.AccMissionAction"
+		 method="deleteAccMission">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>
+		<action name="doQueryBillType" class="mse.action.BillListAction"
+		 method="doQueryBillType">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^billTypevo.*,^message.*</param>			
+			</result>
+		</action>		
+		<action name="selectBill" class="mse.action.AccMissionBackbill1Action"
+		 method="selectBill">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^voBackbill.*,^message.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="AddBeijing" class="mse.action.AccMissionBackInformationAction"
+		 method="AddBeijing">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="doQueryBackInfo" class="mse.action.AccMissionBackInformationAction"
+		 method="doQueryBackInfo">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listAccMissionBackInformationVo.*,^message.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="doQueryPoint" class="mse.action.AccMissionBackInformationAction"
+		 method="doQueryPoint">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^lm.*,^message.*,^pageBean.*</param>	
+			</result>
+		</action>
+		<action name="downLoading" class="mse.action.AccMissionBackInformationAction"
+		 method="downLoading">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>			
+			</result>
+		</action>
+		<action name="getAllText" class="mse.action.AccMissionBacktextAction"
+		 method="getAllText">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listAccMissionBackTextVo.*,^message.*,^pageBean.*</param>			
+			</result>
+		</action>
+			<action name="getBackKey" class="mse.action.AccMissionBackkeyAction"
+		 method="getBackKey">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listAccMissionBackkeyVo.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="getBackFile" class="mse.action.AccMissionBackfileAction"
+		 method="getBackFile">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listAccMissionBackfileVo.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="doAddAccBackBill" class="mse.action.AccMissionBackbill1Action"
+		 method="doAddAccBackBill">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,^referencedId.*</param>			
+			</result>
+		</action>
+		<action name="UpdateBackText" class="mse.action.AccMissionBacktextAction"
+		 method="UpdateBackText">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,^referencedId.*</param>			
+			</result>
+		</action>
+		<action name="doAddAccMissionFile" class="mse.action.AccMissionBackfileAction" 
+		 method="doAddAccMissionFile">
+		   <!-- 限制上传的文件的大小，在struts-default.xml中我们可能找到一个fileUpload拦截器 -->
+		   <interceptor-ref name="fileUpload">
+		   <param name="maximumSize">20971500</param>
+		   </interceptor-ref>
+		   <!-- 加上默认拦截器 -->
+			<interceptor-ref name="fileUploadStack" />		
+			<result type="json">
+				<!--<param name="contentType">text/xml</param>-->	
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^referencedId.*,^acc.*</param>		
+			</result>
+        </action>
+        
+        
+        <action name="doAddAccMissionPointFile" class="mse.action.AccMissionBackfileAction" 
+		 method="doAddAccMissionPointFile">
+		   <!-- 限制上传的文件的大小，在struts-default.xml中我们可能找到一个fileUpload拦截器 -->
+		   <interceptor-ref name="fileUpload">
+		   <param name="maximumSize">16384000</param>
+		   </interceptor-ref>
+		   <!-- 加上默认拦截器 -->
+			<interceptor-ref name="fileUploadStack" />		
+			<result type="json">
+				<param name="contentType">text/xml</param>	
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*,^referencedId.*</param>		
+			</result>
+        </action>
+        
+        
+        <action name="updateFile" class="mse.action.AccMissionBackfileAction"
+		 method="updateFile">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		 <action name="deleteBack" class="mse.action.AccMissionBackInformationAction"
+		 method="deleteBack">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="findbillByType" class="mse.action.BillListAction"
+		 method="findbillByType">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^billlist.*</param>			
+			</result>
+		</action>
+		<action name="findbillById" class="mse.action.BillListAction"
+		 method="findbillById">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^billListVo.*</param>			
+			</result>
+		</action>
+		<action name="selectBillByMission" class="mse.action.AccMissionBackbill1Action"
+		 method="selectBillByMission">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^accMissionBackbill1Vo.*,^listaccMissionBackbillNVo.*,^listSealVo.*</param>			
+			</result>
+		</action>
+		<action name="doUpdateAccmission" class="mse.action.AccMissionBackbill1Action"
+		 method="doUpdateAccmission">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="selectSeals" class="mse.action.DrawAction"
+		 method="selectSeals">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listSealVo.*</param>			
+			</result>
+		</action>
+		<action name="getSealsInfo" class="mse.action.DrawAction"
+		 method="getSealsInfo">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="deleteSeals" class="mse.action.DrawAction"
+		 method="deleteSeals">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="deleteLines" class="mse.action.DrawAction"
+		 method="deleteLines">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="getLinesInfo" class="mse.action.DrawAction"
+		 method="getLinesInfo">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="findTestType" class="mse.action.TestThemeAction"
+		 method="findTestType">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^listTestThemeTypeVo.*</param>			
+			</result>
+		</action>
+		<action name="doAddTestTheme" class="mse.action.TestThemeAction"
+		 method="doAddTestTheme">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="doAddTestYinYong" class="mse.action.TestThemeAction"
+		 method="doAddTestYinYong">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="doDeleteTheme" class="mse.action.TestThemeAction"
+		 method="doDeleteTheme">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="doDeleteThemeByAll" class="mse.action.TestThemeAction"
+		 method="doDeleteThemeByAll">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="doUpdateTheme" class="mse.action.TestThemeAction"
+		 method="doUpdateTheme">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+	
+		<action name="doEditPassWord" class="mse.action.ExpClassStudentAction"
+		 method="doEditPassWord">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="downloadFile" class="mse.action.AccMissionBackfileAction"	
+		 method="downloadFile">			
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</action>
+		<action name="downloadPoint" class="mse.action.AccMissionBackfileAction"	
+		 method="downloadPoint">			
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</action>
+		<action name="downloadPointTwo" class="mse.action.AccMissionBackfileAction"	
+		 method="downloadPointTwo">			
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*</param>
+			</result>
+		</action>
+		<action name="deletePoint" class="mse.action.AccMissionBackfileAction"	
+		 method="deletePoint">			
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^num.*</param>
+			</result>
+		</action>
+		<action name="deleteBackFile" class="mse.action.AccMissionBackfileAction"	
+		 method="deleteBackFile">			
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+			</result>
+		</action>
+		<action name="getAccMissionBackKey" class="mse.action.AccMissionAction"
+		 method="getAccMissionBackKey">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^accMissionVos.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="doUpdateSection" class="mse.action.ExpCoursesNodeAction"
+		 method="doUpdateSection">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		<action name="dobatchStu" class="mse.action.ExpClassAction"
+		 method="dobatchStu">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,^startOk.*</param>			
+			</result>
+		</action>
+		<action name="doQuerySysLogVo" class="mse.action.SysLogAction"
+		 method="doQuerySysLogVo">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*,^listSysLogVo.*,^pageBean.*</param>			
+			</result>
+		</action>
+		<action name="doDeleteAllLog" class="mse.action.SysLogAction"
+		 method="doDeleteAllLog">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		
+		<action name="saveBindIp" class="mse.action.SysLogAction"
+		 method="saveBindIp">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		
+		<action name="stuSignIn" class="mse.action.SysLogAction"
+		 method="stuSignIn">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>
+		
+		<action name="initGetSign" class="mse.action.SysLogAction"
+		 method="initGetSign">	
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>
+		</action>		
+		
+		<action name="classMain" class="mse.action.ExpExperimentClassAction"
+		 method="classMain">
+			<result type="json">				
+			<param name="excludeNullProperties">true</param>		
+			<param name="includeProperties">^message.*</param>			
+			</result>	
+		</action>		
+		
+		<action name="error">
+			<result></result>
+		</action>
+	</package>
+</struts>

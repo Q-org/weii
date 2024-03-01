@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/expDifficulty.do" location="345,60" dimension="358,84" />
+  <StrutsActivity path="/billList.do" location="-45,60" dimension="358,84" />
+  <StrutsActivity path="/web/filter/exp_difficulty/exp_difficulty_search.jsp" location="348,244" dimension="352,48" />
+  <StrutsActivity path="/web/filter/bill_list/bill_search.jsp" location="3,244" dimension="262,48" />
+  <StrutsTransition id="/billList.do,bill_search,/web/filter/bill_list/bill_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="134,144" />
+      <AbsolutePoint location="134,244" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expDifficulty.do,exp_difficulty_search,/web/filter/exp_difficulty/exp_difficulty_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="524,144" />
+      <AbsolutePoint location="524,244" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

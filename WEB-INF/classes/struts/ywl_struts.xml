@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="expNews" extends="framework-default">
+		<!-- 根据索引编号获取实训任务信息START -->
+		<action name="findAllExpNewInfo" class="mse.action.ExpNewsAction"
+			method="findAllExpNewInfo">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^pageBean.*,^listExpNewsVo.*</param>
+			</result>
+		</action>
+		<action name="findExpNewsInfo" class="mse.action.ExpNewsAction"
+			method="findExpNewsInfo">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expNewsVo.*</param>
+			</result>
+		</action>
+		
+		<action name="findExpExperimentClassInfoByStudentNo" class="mse.action.ExpExperimentClassAction"
+			method="findExpExperimentClassInfoByStudentNo">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^listExpExperimentClassVo.*,^pageBean.*</param>
+			</result>
+		</action>
+		
+		<action name="findScoreExpStudent" class="mse.action.ExpExperimentClassAction"
+			method="findScoreExpStudent">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^listStudentExpScoreVo.*,^pageBean.*,^message.*</param>
+			</result>
+		</action>
+		<action name="findScoreAllExpStudent" class="mse.action.ExpExperimentClassAction"
+			method="findScoreAllExpStudent">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^listStudentExpScoreVo.*,^pageBean.*,^message.*</param>
+			</result>
+		</action>
+		<action name="findScoreAllExpStudentTaxde" class="mse.action.ExpExperimentClassAction"
+			method="findScoreAllExpStudentTaxde">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^listStudentExpScoreVo.*,^pageBean.*,^message.*</param>
+			</result>
+		</action>
+		
+		<action name="findLatestNewsInfo" class="mse.action.ExpNewsAction"
+			method="findLatestNewsInfo">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^listExpNewsVo.*</param>
+			</result>
+		</action>
+		<action name="findAllStudentExpScoreStateVoInfo" class="mse.action.ExpExperimentClassStudentAction"
+		 method="findAllStudentExpScoreStateVoInfo">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^studentExpScoreStateVoList.*,^pageBean.*</param>
+			</result>
+		</action>
+		
+		<action name="pauseClass" class="mse.action.ExpExperimentClassStudentAction"
+		 method="pauseClass">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^studentExpScoreStateVoList.*</param>
+			</result>
+		</action>		
+		
+		<action name="findStuExpScoreStateList" class="mse.action.ExpExperimentClassStudentAction"
+		 method="findStuExpScoreStateList">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^stuScoreStateVoList.*,^pageBean.*</param>
+			</result>
+		</action>
+		
+		<!-- 学生课程任务对比信息 -->
+		<action name="findStuMissionState" class="mse.action.AccMissionStudyAction"
+		 method="findStuMissionState">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^listNVo.*,^acc1Vo.*,^accStandard1Vo.*,^listStanVo.*,^accMissionVo.*,^stateABean.*,^listBBean.*,^jsonObj.*</param>
+			</result>
+		</action>
+		
+		<!-- 教师添加课程通知 -->
+		<action name="addExpNewsInfo" class="mse.action.ExpNewsAction"
+			method="addExpNewsInfo">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*</param>
+			</result>
+		</action>
+		
+		<!-- 教师修改课程通知 -->
+		<action name="updateExpNewsInfo" class="mse.action.ExpNewsAction"
+			method="updateExpNewsInfo">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*</param>
+			</result>
+		</action>
+		<!-- 教师删除课程通知 -->
+		<action name="deleteExpNewsById" class="mse.action.ExpNewsAction"
+			method="deleteExpNewsById">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^message.*</param>
+			</result>
+		</action>
+		<!-- 获取成绩分析信息 -->
+		<action name="getCompleteExpScoreList" class="mse.action.ExpExperimentChartAction"
+			method="getCompleteExpScoreList">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^completeList.*,^pageBean.*</param>
+			</result>
+		</action>
+	</package>
+</struts>

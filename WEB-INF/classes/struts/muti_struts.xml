@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="muti" extends="framework-default">
+		<!-- 获取课程课程树start -->
+		<action name="findMutiCourseTree" class="mse.action.ExpMutiCoursesAction"
+			method="findMutiCourseTree">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^none.*</param>
+			</result>
+		</action>
+		<!-- 获取课程课程树end -->
+		<!-- 进程控制导航start -->
+		<action name="toMutiCourseProc" class="mse.action.ExpMutiCoursesAction"
+			method="toMutiCourseProc">
+			<result name="input">/web/filter/exp_experiment_class/exp_experiment_class_search_teacher.jsp
+			</result>
+			<result name="success">/web/filter/exp_experiment_class/exp_process.jsp
+			</result>
+		</action>
+		<!-- 进程控制导航end -->
+		<!-- 进程控制导航start -->
+		<action name="toMutiCourseProcM" class="mse.action.ExpMutiCoursesAction"
+			method="toMutiCourseProcM">
+			<result name="input">/web/filter/exp_experiment_class/exp_experiment_class_search_teacher.jsp
+			</result>
+			<result name="success">/web/filter/exp_experiment_class/exp_process_m.jsp
+			</result>
+		</action>
+		<!-- 进程控制导航end -->
+		<!-- 进程控制导航start -->
+		<!-- 处理课程课程数据节点选中和去选start -->
+		<action name="dealExpMutiCourse" class="mse.action.ExpMutiCoursesAction"
+			method="dealExpMutiCourse">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*</param>
+			</result>
+		</action>
+		<!-- 处理课程课程数据节点选中和去选end -->
+		<!-- 获取课程及其下开放的课程信息start -->
+		<action name="findMutiExpCourses" class="mse.action.ExpMutiCoursesAction"
+			method="findMutiExpCourses">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expExperimentClassVo.*,^expCoursesVoList.*</param>
+			</result>
+		</action>
+		<!-- 获取课程及其下开放的课程信息end -->
+		<!--通过课程、课程编号获取所有一级节点及一节节点的最小叶子结点start -->
+		<action name="findExpMutiChartNodes" class="mse.action.ExpMutiCoursesAction"
+			method="findExpMutiChartNodes">
+			<result name="input">/web/filter/exp_experiment_class/tax.jsp
+			</result>
+			<result name="success">/web/filter/exp_experiment_class/exp_course_chapter.jsp
+			</result>
+		</action>
+		<!-- 通过课程、课程编号获取所有一级节点及一节节点的最小叶子结点end -->
+		<!-- 导航到taxflash start -->
+		<action name="toMutiTax" class="mse.action.ExpMutiCoursesAction"
+			method="toMutiTax">
+			<result name="success">/tax/tax.jsp
+			</result>
+		</action>
+		<!-- 导航到taxflash end -->
+		<!-- 课程相关信息start -->
+		<action name="findExpMutiExperiment" class="mse.action.ExpMutiCoursesAction"
+			method="findExpMutiExperiment">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*,^expMutiExperimentVo.*</param>
+			</result>
+		</action>
+		<!-- 课程相关信息end -->
+		<!-- 课程任务信息start -->
+		<action name="findExpCoursesNodeContent" class="mse.action.ExpMutiCoursesAction"
+			method="findExpCoursesNodeContent">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*,^pageBean.*,^expCoursesNodeContentVoList.*</param>
+			</result>
+		</action>
+		<!-- 课程任务信息end -->
+		<!-- 课程课程结构树(到章节单元下)start -->
+		<action name="findMutiCourseTree4Expend" class="mse.action.ExpMutiCoursesAction"
+			method="findMutiCourseTree4Expend">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*,^expMutiExperimentVo.*</param>
+			</result>
+		</action>
+		<!-- 课程课程结构树(到章节单元下)end -->
+		<!-- 处理课程课程数据节点选中和去选start -->
+		<action name="dealExpMutiCourMiss" class="mse.action.ExpMutiCoursesAction"
+			method="dealExpMutiCourMiss">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*</param>
+			</result>
+		</action>
+		<!-- 处理课程课程数据节点选中和去选end -->
+		<!-- 获取课程、课程、章节单元start -->
+		<action name="findNavNodes" class="mse.action.ExpMutiCoursesAction"
+			method="findNavNodes">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*,^classNo.*,^courseNo.*,^navList.*,^nodeList.*,^expInfo.*,^expStu.*</param>
+			</result>
+		</action>
+		<!-- 获取课程、课程、章节单元end -->
+	</package>
+</struts>

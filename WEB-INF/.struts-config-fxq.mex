@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/expParameter.do" location="15,1980" dimension="358,84" />
+  <StrutsActivity path="/sysUser.do" location="693,1682" dimension="358,84" />
+  <StrutsActivity path="/expDept.do" location="142,1682" dimension="358,84" />
+  <StrutsActivity path="/expTeacher.do" location="374,1128" dimension="358,84" />
+  <StrutsActivity path="/expClass.do" location="1317,0" dimension="358,84" />
+  <StrutsActivity path="/expClassStudent.do" location="485,574" dimension="358,84" />
+  <StrutsActivity path="/expCourses.do" location="220,1405" dimension="358,84" />
+  <StrutsActivity path="/expExperimentClass.do" location="850,297" dimension="358,84" />
+  <StrutsActivity path="/expExperimentClassStudent.do" location="380,851" dimension="358,84" />
+  <StrutsActivity path="/expTeachingControl.do" location="1250,950" dimension="256,84" />
+  <StrutsActivity path="/expCoursesNode.do" location="50,1150" dimension="232,84" />
+  <StrutsActivity path="/expNodeContent.do" location="1550,650" dimension="232,84" />
+  <StrutsActivity path="/accSystemFile.do" location="1550,1150" dimension="226,84" />
+  <StrutsActivity path="/accMission.do" location="1550,1450" dimension="358,84" />
+  <StrutsActivity path="/accMissionBackbill1.do" location="1850,1650" dimension="262,84" />
+  <StrutsActivity path="/accEnter.do" location="1250,1450" dimension="196,84" />
+  <StrutsActivity path="/accEnterRole.do" location="1250,1950" dimension="220,84" />
+  <StrutsActivity path="/accReferencedIdRoles.do" location="2150,1950" dimension="358,84" />
+  <StrutsActivity path="/sysLog.do" location="1850,2150" dimension="358,84" />
+  <StrutsActivity path="/web/filter/exp_parameter/exp_parameter_edit.jsp" location="50,350" dimension="328,48" />
+  <StrutsActivity path="/web/filter/index.jsp" location="789,1866" dimension="166,48" />
+  <StrutsActivity path="/web/filter/exp_dept/exp_dept_edit.jsp" location="0,1866" dimension="268,48" />
+  <StrutsActivity path="/web/filter/exp_dept/exp_dept_search.jsp" location="368,1866" dimension="280,48" />
+  <StrutsActivity path="/web/filter/exp_teacher/exp_teacher_add.jsp" location="404,1312" dimension="298,48" />
+  <StrutsActivity path="/web/filter/exp_teacher/exp_teacher_edit.jsp" location="0,1312" dimension="304,48" />
+  <StrutsActivity path="/web/filter/exp_teacher/exp_teacher_search.jsp" location="802,1312" dimension="316,48" />
+  <StrutsActivity path="/web/filter/exp_class/import_student_list_from_excel_step2.jsp" location="0,204" dimension="412,48" />
+  <StrutsActivity path="/web/filter/exp_class/import_student_list_from_excel_step1.jsp" location="1760,204" dimension="412,48" />
+  <StrutsActivity path="/web/filter/exp_class/exp_class_student_build.jsp" location="2272,204" dimension="334,48" />
+  <StrutsActivity path="/web/filter/exp_class/exp_class_add.jsp" location="2706,204" dimension="274,48" />
+  <StrutsActivity path="/web/filter/exp_class/exp_class_edit.jsp" location="952,204" dimension="280,48" />
+  <StrutsActivity path="/web/filter/exp_class/exp_class_search_teacher.jsp" location="512,204" dimension="340,48" />
+  <StrutsActivity path="/web/filter/exp_class/exp_class_search_student.jsp" location="1550,350" dimension="340,48" />
+  <StrutsActivity path="/web/filter/exp_class_student/exp_class_student_search_student.jsp" location="2150,450" dimension="436,48" />
+  <StrutsActivity path="/web/filter/exp_class_student/exp_class_student_search_teacher.jsp" location="2150,350" dimension="436,48" />
+  <StrutsActivity path="/web/filter/exp_class_student/exp_class_student_edit.jsp" location="958,758" dimension="376,48" />
+  <StrutsActivity path="/web/filter/exp_class_student/exp_class_student_add.jsp" location="0,758" dimension="370,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_search_student.jsp" location="1250,2250" dimension="472,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_course_add.jsp" location="825,1590" dimension="286,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_course_search_teacher.jsp" location="0,1589" dimension="352,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_course_edit.jsp" location="50,2150" dimension="292,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_course_search_student.jsp" location="2150,550" dimension="352,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_course_search_admin.jsp" location="452,1589" dimension="340,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_edit.jsp" location="1550,850" dimension="412,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_search_teacher.jsp" location="1626,481" dimension="472,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class_student/exp_experiment_class_student_search_score.jsp" location="2450,1350" dimension="556,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_add.jsp" location="559,481" dimension="406,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_search_admin.jsp" location="1066,481" dimension="460,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_detail.jsp" location="950,1150" dimension="424,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/mission_random.jsp" location="50,650" dimension="346,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class_student/exp_experiment_class_student_search_score_mission.jsp" location="2450,1650" dimension="604,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_search_score.jsp" location="2450,1250" dimension="460,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class_student/exp_experiment_class_student_search_score_mission1.jsp" location="2450,650" dimension="610,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class/exp_experiment_class_add_new_file.jsp" location="0,481" dimension="460,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class_student/exp_experiment_class_student_right.jsp" location="608,1035" dimension="514,48" />
+  <StrutsActivity path="/web/filter/exp_experiment_class_student/exp_experiment_class_student_left.jsp" location="0,1035" dimension="508,48" />
+  <StrutsActivity path="/web/filter/exp_teaching_control/exp_experiment_class_course_control_search.jsp" location="950,650" dimension="514,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare_search/exp_node_content/exp_node_content_search_prepare.jsp" location="50,2250" dimension="604,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_backdrop.jsp" location="1850,1250" dimension="526,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_edit.jsp" location="1850,1150" dimension="502,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/exp_node_content_search_study.jsp" location="2150,850" dimension="538,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_new_file.jsp" location="1850,1350" dimension="526,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_search_prepare.jsp" location="2150,1450" dimension="562,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/exp_node_content_new_file_study.jsp" location="1850,2450" dimension="550,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_result.jsp" location="2450,750" dimension="514,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/kj/index.jsp" location="50,2550" dimension="412,48" />
+  <StrutsActivity path="/web/filter/acc_system_file/acc_system_file_search.jsp" location="1250,1350" dimension="364,48" />
+  <StrutsActivity path="/web/filter/acc_system_file/acc_system_file_detail.jsp" location="2450,1750" dimension="364,48" />
+  <StrutsActivity path="/web/filter/acc_system_file/stu_acc_system_file_search.jsp" location="2450,2150" dimension="388,48" />
+  <StrutsActivity path="/web/filter/acc_system_file/acc_system_file_add_new_file.jsp" location="2450,1150" dimension="400,48" />
+  <StrutsActivity path="/web/filter/acc_system_file/stu_acc_system_file_detail.jsp" location="2450,1850" dimension="388,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_add.jsp" location="1850,750" dimension="538,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_add_new_file.jsp" location="1850,1050" dimension="592,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_search.jsp" location="1850,950" dimension="556,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/kj/left.jsp" location="1250,2550" dimension="406,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_edit.jsp" location="1250,2150" dimension="544,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/kj/acc_enter_role_search.jsp" location="650,2150" dimension="508,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/kj/kj_enter_search.jsp" location="350,2650" dimension="472,48" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_edit.jsp" location="1550,2050" dimension="346,48" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_add.jsp" location="1850,1850" dimension="340,48" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_search.jsp" location="1250,1850" dimension="358,48" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_role/acc_enter_role_edit.jsp" location="650,2050" dimension="466,48" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_role/acc_enter_role_search.jsp" location="1550,1950" dimension="478,48" />
+  <StrutsActivity path="/web/filter/sys_log/sys_log_search.jsp" location="1250,2850" dimension="268,48" />
+  <StrutsActivity path="/web/filter/exp_class/exp_class_search_admin.jsp" location="1332,204" dimension="328,48" />
+  <StrutsActivity path="/web/filter/exp_class_student/exp_class_student_search.jsp" location="470,758" dimension="388,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_search.jsp" location="650,1450" dimension="514,48" />
+  <StrutsActivity path="/web/filter/acc_mission/acc_mission_add.jsp" location="1250,1750" dimension="298,48" />
+  <StrutsActivity path="/web/filter/acc_mission/acc_mission_search.jsp" location="1250,1650" dimension="316,48" />
+  <StrutsActivity path="/web/filter/acc_mission/acc_mission_add_new_file.jsp" location="1850,650" dimension="352,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/kj/footer.jsp" location="2150,1550" dimension="418,48" />
+  <StrutsActivity path="web/filter/exp_course/exp_study/exp_node_content/kj/acc_enter_role_search.jsp" location="2450,2250" dimension="502,48" />
+  <StrutsActivity path="web/filter/exp_course/exp_study/exp_node_content/kj/tiaozhuan.jsp" location="50,2350" dimension="430,48" />
+  <StrutsActivity path="/web/filter/exp_course/exp_study/exp_node_content/kj/tiaozhuan.jsp" />
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_student_search_score_mission,/web/filter/exp_experiment_class_student/exp_experiment_class_student_search_score_mission.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1029,297" />
+      <AbsolutePoint location="1029,267" />
+      <AbsolutePoint location="3165,267" />
+      <AbsolutePoint location="3165,1674" />
+      <AbsolutePoint location="3054,1674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCourses.do,exp_course_search_teacher,/web/filter/exp_course/exp_course_search_teacher.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="235,1489" />
+      <AbsolutePoint location="235,1589" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accSystemFile.do,stu_acc_system_file_detail,/web/filter/acc_system_file/stu_acc_system_file_detail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1663,1234" />
+      <AbsolutePoint location="1663,1412" />
+      <AbsolutePoint location="3081,1412" />
+      <AbsolutePoint location="3081,1874" />
+      <AbsolutePoint location="2838,1874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_detail,/web/filter/exp_experiment_class/exp_experiment_class_detail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="850,305" />
+      <AbsolutePoint location="-45,305" />
+      <AbsolutePoint location="-45,995" />
+      <AbsolutePoint location="1162,995" />
+      <AbsolutePoint location="1162,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expDept.do,exp_dept_search,/web/filter/exp_dept/exp_dept_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="485,1766" />
+      <AbsolutePoint location="485,1866" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClass.do,import_student_list_from_excel_step2,/web/filter/exp_class/import_student_list_from_excel_step2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1317,12" />
+      <AbsolutePoint location="206,12" />
+      <AbsolutePoint location="206,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,tiaozhuan,/web/filter/exp_course/exp_study/exp_node_content/kj/tiaozhuan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1729,1492" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClass.do,exp_class_search_student,/web/filter/exp_class/exp_class_search_student.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1496,0" />
+      <AbsolutePoint location="1496,-75" />
+      <AbsolutePoint location="1720,-75" />
+      <AbsolutePoint location="1720,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_backdrop,/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_backdrop.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,661" />
+      <AbsolutePoint location="1521,661" />
+      <AbsolutePoint location="1521,1274" />
+      <AbsolutePoint location="1850,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expTeacher.do,exp_dept_add,/web/filter/exp_teacher/exp_teacher_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="553,1212" />
+      <AbsolutePoint location="553,1312" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accSystemFile.do,acc_system_file_to_detail,/web/filter/acc_system_file/acc_system_file_detail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1641,1234" />
+      <AbsolutePoint location="1641,1435" />
+      <AbsolutePoint location="2127,1435" />
+      <AbsolutePoint location="2127,1774" />
+      <AbsolutePoint location="2450,1774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,mission_random,/web/filter/exp_experiment_class/mission_random.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="850,335" />
+      <AbsolutePoint location="-15,335" />
+      <AbsolutePoint location="-15,674" />
+      <AbsolutePoint location="50,674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_add,/web/filter/exp_experiment_class/exp_experiment_class_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,381" />
+      <AbsolutePoint location="950,481" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sysUser.do,index,/web/filter/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="872,1766" />
+      <AbsolutePoint location="872,1866" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_search_study,/web/filter/exp_course/exp_study/exp_node_content/exp_node_content_search_study.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,713" />
+      <AbsolutePoint location="1438,713" />
+      <AbsolutePoint location="1438,866" />
+      <AbsolutePoint location="1222,866" />
+      <AbsolutePoint location="1222,1113" />
+      <AbsolutePoint location="2465,1113" />
+      <AbsolutePoint location="2465,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_result,/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_result.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1680,650" />
+      <AbsolutePoint location="1680,645" />
+      <AbsolutePoint location="2423,645" />
+      <AbsolutePoint location="2423,774" />
+      <AbsolutePoint location="2450,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClassStudent.do,exp_class_student_edit,/web/filter/exp_class_student/exp_class_student_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="664,658" />
+      <AbsolutePoint location="664,713" />
+      <AbsolutePoint location="1146,713" />
+      <AbsolutePoint location="1146,758" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expTeachingControl.do,exp_experiment_class_course_control_search,/web/filter/exp_teaching_control/exp_experiment_class_course_control_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1378,950" />
+      <AbsolutePoint location="1378,698" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_search_teacher,/web/filter/exp_experiment_class/exp_experiment_class_search_teacher.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1029,381" />
+      <AbsolutePoint location="1029,465" />
+      <AbsolutePoint location="1862,465" />
+      <AbsolutePoint location="1862,481" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_student_search_score_mission1,/web/filter/exp_experiment_class_student/exp_experiment_class_student_search_score_mission1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="937,297" />
+      <AbsolutePoint location="937,162" />
+      <AbsolutePoint location="2691,162" />
+      <AbsolutePoint location="2691,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_edit,/web/filter/exp_experiment_class/exp_experiment_class_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1208,305" />
+      <AbsolutePoint location="3135,305" />
+      <AbsolutePoint location="3135,821" />
+      <AbsolutePoint location="1756,821" />
+      <AbsolutePoint location="1756,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClassStudent.do,exp_class_student_search_teacher,/web/filter/exp_class_student/exp_class_student_search_teacher.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="544,574" />
+      <AbsolutePoint location="544,413" />
+      <AbsolutePoint location="2368,413" />
+      <AbsolutePoint location="2368,398" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expDept.do,exp_dept_edit,/web/filter/exp_dept/exp_dept_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="157,1766" />
+      <AbsolutePoint location="157,1866" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCourses.do,exp_course_add,/web/filter/exp_course/exp_course_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="399,1489" />
+      <AbsolutePoint location="399,1565" />
+      <AbsolutePoint location="968,1565" />
+      <AbsolutePoint location="968,1590" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expParameter.do,exp_parameter_edit,/web/filter/exp_parameter/exp_parameter_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15,2022" />
+      <AbsolutePoint location="-75,2022" />
+      <AbsolutePoint location="-75,374" />
+      <AbsolutePoint location="50,374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_student_search_score,/web/filter/exp_experiment_class_student/exp_experiment_class_student_search_score.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1208,335" />
+      <AbsolutePoint location="3075,335" />
+      <AbsolutePoint location="3075,1374" />
+      <AbsolutePoint location="3006,1374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_new_file_study,/web/filter/exp_course/exp_study/exp_node_content/exp_node_content_new_file_study.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1688,734" />
+      <AbsolutePoint location="1688,741" />
+      <AbsolutePoint location="3201,741" />
+      <AbsolutePoint location="3201,2474" />
+      <AbsolutePoint location="2400,2474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClass.do,exp_class_search_teacher,/web/filter/exp_class/exp_class_search_teacher.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1317,42" />
+      <AbsolutePoint location="682,42" />
+      <AbsolutePoint location="682,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCourses.do,exp_course_edit,/web/filter/exp_course/exp_course_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="220,1477" />
+      <AbsolutePoint location="-45,1477" />
+      <AbsolutePoint location="-45,2174" />
+      <AbsolutePoint location="50,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClass.do,import_student_list_from_excel_step1,/web/filter/exp_class/import_student_list_from_excel_step1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1675,72" />
+      <AbsolutePoint location="1966,72" />
+      <AbsolutePoint location="1966,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,kj_left,/web/filter/exp_course/exp_study/exp_node_content/kj/left.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1908,1513" />
+      <AbsolutePoint location="3105,1513" />
+      <AbsolutePoint location="3105,2574" />
+      <AbsolutePoint location="1656,2574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClassStudent.do,exp_class_student_add,/web/filter/exp_class_student/exp_class_student_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="485,616" />
+      <AbsolutePoint location="35,616" />
+      <AbsolutePoint location="35,758" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_search_admin,/web/filter/exp_experiment_class/exp_experiment_class_search_admin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1081,381" />
+      <AbsolutePoint location="1081,481" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClassStudent.do,exp_experiment_class_search_score,/web/filter/exp_experiment_class/exp_experiment_class_search_score.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="738,913" />
+      <AbsolutePoint location="2865,913" />
+      <AbsolutePoint location="2865,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,acc_mission_add_new_file,/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_add_new_file.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1835,1450" />
+      <AbsolutePoint location="1835,1068" />
+      <AbsolutePoint location="1850,1068" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnterRole.do,acc_enter_role_search,/web/filter/exp_course/acc_enter/acc_enter_role/acc_enter_role_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1470,1974" />
+      <AbsolutePoint location="1550,1974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_new_file,/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_new_file.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,683" />
+      <AbsolutePoint location="1543,683" />
+      <AbsolutePoint location="1543,1333" />
+      <AbsolutePoint location="2113,1333" />
+      <AbsolutePoint location="2113,1350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_search_prepare,/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_search_prepare.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1666,734" />
+      <AbsolutePoint location="1666,843" />
+      <AbsolutePoint location="3027,843" />
+      <AbsolutePoint location="3027,1474" />
+      <AbsolutePoint location="2712,1474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnterRole.do,acc_enter_role_edit,/web/filter/exp_course/acc_enter/acc_enter_role/acc_enter_role_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1360,2034" />
+      <AbsolutePoint location="1360,2074" />
+      <AbsolutePoint location="1116,2074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accSystemFile.do,acc_system_file_search,/web/filter/acc_system_file/acc_system_file_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1599,1234" />
+      <AbsolutePoint location="1599,1350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,acc_mission_search,/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1805,1450" />
+      <AbsolutePoint location="1805,974" />
+      <AbsolutePoint location="1850,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,acc_mission_edit,/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1759,1534" />
+      <AbsolutePoint location="1759,1929" />
+      <AbsolutePoint location="1522,1929" />
+      <AbsolutePoint location="1522,2150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expTeacher.do,exp_dept_search,/web/filter/exp_teacher/exp_teacher_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="717,1212" />
+      <AbsolutePoint location="717,1336" />
+      <AbsolutePoint location="802,1336" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnter.do,kj_enter_search,/web/filter/exp_course/exp_study/exp_node_content/kj/kj_enter_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1483" />
+      <AbsolutePoint location="1179,1483" />
+      <AbsolutePoint location="1179,2674" />
+      <AbsolutePoint location="822,2674" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,tiaozhuan,web/filter/exp_course/exp_study/exp_node_content/kj/acc_enter_role_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1789,1534" />
+      <AbsolutePoint location="1789,1929" />
+      <AbsolutePoint location="2853,1929" />
+      <AbsolutePoint location="2853,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expTeacher.do,exp_dept_edit,/web/filter/exp_teacher/exp_teacher_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="389,1212" />
+      <AbsolutePoint location="389,1336" />
+      <AbsolutePoint location="304,1336" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_search_prepare_search,/web/filter/exp_course/exp_prepare_search/exp_node_content/exp_node_content_search_prepare.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1644,734" />
+      <AbsolutePoint location="1644,821" />
+      <AbsolutePoint location="-15,821" />
+      <AbsolutePoint location="-15,2274" />
+      <AbsolutePoint location="50,2274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,tiaozhuan,web/filter/exp_course/exp_study/exp_node_content/kj/tiaozhuan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1789,1534" />
+      <AbsolutePoint location="1789,1929" />
+      <AbsolutePoint location="2997,1929" />
+      <AbsolutePoint location="2997,2374" />
+      <AbsolutePoint location="480,2374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sysLog.do,sys_log_search,/web/filter/sys_log/sys_log_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,2183" />
+      <AbsolutePoint location="1809,2183" />
+      <AbsolutePoint location="1809,2874" />
+      <AbsolutePoint location="1518,2874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCourses.do,exp_course_search_admin,/web/filter/exp_course/exp_course_search_admin.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="563,1489" />
+      <AbsolutePoint location="563,1589" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_add_new_file,/web/filter/exp_experiment_class/exp_experiment_class_add_new_file.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="850,365" />
+      <AbsolutePoint location="393,365" />
+      <AbsolutePoint location="393,481" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,exp_node_content_edit,/web/filter/exp_course/exp_prepare/exp_node_content/exp_node_content_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1782,713" />
+      <AbsolutePoint location="2979,713" />
+      <AbsolutePoint location="2979,1213" />
+      <AbsolutePoint location="2101,1213" />
+      <AbsolutePoint location="2101,1198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNodeContent.do,kj_index,/web/filter/exp_course/exp_study/exp_node_content/kj/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1666,650" />
+      <AbsolutePoint location="1666,536" />
+      <AbsolutePoint location="-99,536" />
+      <AbsolutePoint location="-99,2574" />
+      <AbsolutePoint location="50,2574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnter.do,acc_enter_search,/web/filter/exp_course/acc_enter/acc_enter_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1378,1534" />
+      <AbsolutePoint location="1378,1565" />
+      <AbsolutePoint location="1581,1565" />
+      <AbsolutePoint location="1581,1850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClass.do,exp_experiment_class_search_score,/web/filter/exp_experiment_class/exp_experiment_class_search_score.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="907,297" />
+      <AbsolutePoint location="907,132" />
+      <AbsolutePoint location="3105,132" />
+      <AbsolutePoint location="3105,1274" />
+      <AbsolutePoint location="2910,1274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accSystemFile.do,acc_system_file_add_new_file,/web/filter/acc_system_file/acc_system_file_add_new_file.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1685,1234" />
+      <AbsolutePoint location="1685,1241" />
+      <AbsolutePoint location="2650,1241" />
+      <AbsolutePoint location="2650,1198" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCourses.do,exp_course_search_student,/web/filter/exp_course/exp_course_search_student.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="220,1447" />
+      <AbsolutePoint location="-135,1447" />
+      <AbsolutePoint location="-135,559" />
+      <AbsolutePoint location="2150,559" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,acc_enter_role_search,/web/filter/exp_course/exp_study/exp_node_content/kj/acc_enter_role_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1729,1534" />
+      <AbsolutePoint location="1729,1813" />
+      <AbsolutePoint location="1131,1813" />
+      <AbsolutePoint location="1131,2150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accSystemFile.do,stu_acc_system_file_search,/web/filter/acc_system_file/stu_acc_system_file_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1663,1150" />
+      <AbsolutePoint location="1663,1013" />
+      <AbsolutePoint location="3135,1013" />
+      <AbsolutePoint location="3135,2174" />
+      <AbsolutePoint location="2838,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClassStudent.do,exp_experiment_class_student_right,/web/filter/exp_experiment_class_student/exp_experiment_class_student_right.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="623,935" />
+      <AbsolutePoint location="623,1035" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnter.do,acc_enter_add,/web/filter/exp_course/acc_enter/acc_enter_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1348,1534" />
+      <AbsolutePoint location="1348,1613" />
+      <AbsolutePoint location="2165,1613" />
+      <AbsolutePoint location="2165,1850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expExperimentClassStudent.do,exp_experiment_class_student_left,/web/filter/exp_experiment_class_student/exp_experiment_class_student_left.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="493,935" />
+      <AbsolutePoint location="493,1035" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnter.do,acc_enter_edit,/web/filter/exp_course/acc_enter/acc_enter_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1513" />
+      <AbsolutePoint location="-135,1513" />
+      <AbsolutePoint location="-135,2113" />
+      <AbsolutePoint location="1723,2113" />
+      <AbsolutePoint location="1723,2098" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClassStudent.do,exp_class_student_search_student,/web/filter/exp_class_student/exp_class_student_search_student.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="843,616" />
+      <AbsolutePoint location="2517,616" />
+      <AbsolutePoint location="2517,498" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClass.do,exp_class_edit,/web/filter/exp_class/exp_class_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1317,72" />
+      <AbsolutePoint location="1092,72" />
+      <AbsolutePoint location="1092,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accMission.do,acc_mission_add,/web/filter/exp_course/exp_prepare/exp_node_content/acc_mission/acc_mission_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1783,1450" />
+      <AbsolutePoint location="1783,942" />
+      <AbsolutePoint location="2119,942" />
+      <AbsolutePoint location="2119,798" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClass.do,exp_class_add,/web/filter/exp_class/exp_class_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1675,12" />
+      <AbsolutePoint location="2843,12" />
+      <AbsolutePoint location="2843,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCourses.do,exp_experiment_class_search_student,/web/filter/exp_experiment_class/exp_experiment_class_search_student.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="578,1435" />
+      <AbsolutePoint location="1209,1435" />
+      <AbsolutePoint location="1209,2274" />
+      <AbsolutePoint location="1250,2274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expClass.do,exp_class_student_build,/web/filter/exp_class/exp_class_student_build.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1675,42" />
+      <AbsolutePoint location="2439,42" />
+      <AbsolutePoint location="2439,204" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

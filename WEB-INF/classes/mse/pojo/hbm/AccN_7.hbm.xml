@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="mse.pojo.AccN_7" table="acc_n_7">
+      	<composite-id> 
+		    <key-property name="expId"  column="expID" type="java.lang.String" length="60"  />
+			<key-property name="missionId" column="missionId" type="java.lang.String" length="200" /> 
+			<key-property name="rowId" column="rowNo" type="java.lang.Long" length="4" /> 
+		</composite-id>
+        <property name="standardRowno" type="java.lang.Long">
+            <column name="standard_rowno" precision="4" scale="0" />
+        </property>
+        <property name="keyError" type="java.lang.String">
+            <column name="key_error" length="1" />
+        </property>
+        <property name="rightCount" type="java.lang.Long">
+            <column name="right_count" precision="5" scale="0" />
+        </property>
+        <property name="errorCount" type="java.lang.Long">
+            <column name="error_count" precision="5" scale="0" />
+        </property>
+        <property name="b1" type="java.lang.String">
+            <column name="b1" length="60" />
+        </property>
+        <property name="b2" type="java.lang.String">
+            <column name="b2" length="60" />
+        </property>
+        <property name="b3" type="java.lang.String">
+            <column name="b3" length="60" />
+        </property>
+        <property name="b4" type="java.lang.String">
+            <column name="b4" length="60" />
+        </property>
+        <property name="b5" type="java.lang.String">
+            <column name="b5" length="60" />
+        </property>
+        <property name="b6" type="java.lang.String">
+            <column name="b6" length="60" />
+        </property>
+        <property name="b7" type="java.lang.String">
+            <column name="b7" length="60" />
+        </property>
+        <property name="b8" type="java.lang.String">
+            <column name="b8" length="60" />
+        </property>
+        <property name="b9" type="java.lang.String">
+            <column name="b9" length="60" />
+        </property>
+        <property name="b10" type="java.lang.String">
+            <column name="b10" length="60" />
+        </property>
+        <property name="b11" type="java.lang.String">
+            <column name="b11" length="60" />
+        </property>
+        <property name="b12" type="java.lang.String">
+            <column name="b12" length="60" />
+        </property>
+        <property name="b13" type="java.lang.String">
+            <column name="b13" length="60" />
+        </property>
+        <property name="b14" type="java.lang.String">
+            <column name="b14" length="60" />
+        </property>
+        <property name="b15" type="java.lang.String">
+            <column name="b15" length="60" />
+        </property>
+        <property name="b16" type="java.lang.String">
+            <column name="b16" length="60" />
+        </property>
+        <property name="b17" type="java.lang.String">
+            <column name="b17" length="60" />
+        </property>
+        <property name="b18" type="java.lang.String">
+            <column name="b18" length="60" />
+        </property>
+        <property name="b19" type="java.lang.String">
+            <column name="b19" length="60" />
+        </property>
+        <property name="b20" type="java.lang.String">
+            <column name="b20" length="60" />
+        </property>
+        <property name="b21" type="java.lang.String">
+            <column name="b21" length="60" />
+        </property>
+        <property name="b22" type="java.lang.String">
+            <column name="b22" length="60" />
+        </property>
+        <property name="b23" type="java.lang.String">
+            <column name="b23" length="60" />
+        </property>
+        <property name="b24" type="java.lang.String">
+            <column name="b24" length="60" />
+        </property>
+        <property name="b25" type="java.lang.String">
+            <column name="b25" length="60" />
+        </property>
+        <property name="b26" type="java.lang.String">
+            <column name="b26" length="60" />
+        </property>
+        <property name="b27" type="java.lang.String">
+            <column name="b27" length="60" />
+        </property>
+        <property name="b28" type="java.lang.String">
+            <column name="b28" length="60" />
+        </property>
+        <property name="b29" type="java.lang.String">
+            <column name="b29" length="60" />
+        </property>
+        <property name="b30" type="java.lang.String">
+            <column name="b30" length="60" />
+        </property>
+        <property name="b31" type="java.lang.String">
+            <column name="b31" length="60" />
+        </property>
+        <property name="b32" type="java.lang.String">
+            <column name="b32" length="60" />
+        </property>
+        <property name="b33" type="java.lang.String">
+            <column name="b33" length="60" />
+        </property>
+        <property name="b34" type="java.lang.String">
+            <column name="b34" length="60" />
+        </property>
+        <property name="b35" type="java.lang.String">
+            <column name="b35" length="60" />
+        </property>
+        <property name="b36" type="java.lang.String">
+            <column name="b36" length="60" />
+        </property>
+        <property name="b37" type="java.lang.String">
+            <column name="b37" length="60" />
+        </property>
+        <property name="b38" type="java.lang.String">
+            <column name="b38" length="60" />
+        </property>
+        <property name="b39" type="java.lang.String">
+            <column name="b39" length="60" />
+        </property>
+        <property name="b40" type="java.lang.String">
+            <column name="b40" length="60" />
+        </property>
+        <property name="b41" type="java.lang.String">
+            <column name="b41" length="60" />
+        </property>
+        <property name="b42" type="java.lang.String">
+            <column name="b42" length="60" />
+        </property>
+        <property name="b43" type="java.lang.String">
+            <column name="b43" length="60" />
+        </property>
+        <property name="b44" type="java.lang.String">
+            <column name="b44" length="60" />
+        </property>
+        <property name="b45" type="java.lang.String">
+            <column name="b45" length="60" />
+        </property>
+        <property name="b46" type="java.lang.String">
+            <column name="b46" length="300" />
+        </property>
+        <property name="b47" type="java.lang.String">
+            <column name="b47" length="300" />
+        </property>
+        <property name="b48" type="java.lang.String">
+            <column name="b48" length="300" />
+        </property>
+        <property name="b49" type="java.lang.String">
+            <column name="b49" length="300" />
+        </property>
+        <property name="b50" type="java.lang.String">
+            <column name="b50" length="300" />
+        </property>
+    </class>
+</hibernate-mapping>

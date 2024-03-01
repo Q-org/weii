@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="qianxue_v5" extends="framework-default">
+		<action name="getExpParameterAll" class="mse.action.ExpParameterAction"
+			method="getExpParameterAll">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expParameterVo.*,^localip.*</param>
+			</result>
+		</action>
+		<!--****** 学生课程、角色、任务信息 ******start -->
+		<!-- 返回该课程、学生、岗位（角色）的日待办任务 start -->
+		<action name="findUnExpStuMissions" class="mse.action.ExpStuMissionAction"
+			method="findUnExpStuMissions">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*</param>
+			</result>
+		</action>
+		<action name="findUnExpStuMissionsWeb" class="mse.action.ExpStuMissionAction"
+			method="findUnExpStuMissionsWeb">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*,^pageBean.*</param>
+			</result>
+		</action>
+		<!-- 返回该课程、学生、岗位（角色）的日待办任务 end -->
+		<!-- 返回该课程、学生、岗位（角色）的该月办理中任务 start -->
+		<action name="findIngExpStuMissions" class="mse.action.ExpStuMissionAction"
+			method="findIngExpStuMissions">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*</param>
+			</result>
+		</action>
+		<!-- 返回该课程、学生、岗位（角色）的该月办理中任务 end -->
+		<!-- 返回该课程、学生、岗位（角色）的当月的日任务数 start -->
+		<action name="findUnExpStuMissionCount" class="mse.action.ExpStuMissionAction"
+			method="findUnExpStuMissionCount">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*</param>
+			</result>
+		</action>
+		<!-- 返回该课程、学生、岗位（角色）的当月的日任务数 end -->
+		<!-- 返回该课程、学生、岗位（角色）的已办结任务start -->
+		<action name="findOkExpStuMissions" class="mse.action.ExpStuMissionAction"
+			method="findOkExpStuMissions">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*</param>
+			</result>
+		</action>
+		<!-- 返回该课程、学生、岗位（角色）的已办结任务end -->
+		<!--  半自动签章及流程处理start -->
+		<action name="halfAutoSeal" class="mse.action.ExpStuMissionAction"
+			method="halfAutoSeal">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^result.*</param>
+			</result>
+		</action>
+		<!--  半自动签章及流程处理end -->
+		<!--  返回该任务的角色流程列表start -->
+		<action name="findSequenceRoles" class="mse.action.ExpStuMissionAction"
+			method="findSequenceRoles">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*,^result.*</param>
+			</result>
+		</action>
+		<!--  返回该任务的角色流程列表end -->	
+		<!--  半自动回退任务start -->
+		<action name="retreatActionAuto" class="mse.action.ExpStuMissionAction"
+			method="retreatActionAuto">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*,^result.*</param>
+			</result>
+		</action>
+		<!--  半自动回退任务end -->	
+		<!--  半自动回退任务判断start -->
+		<action name="retreatCheckAuto" class="mse.action.ExpStuMissionAction"
+			method="retreatCheckAuto">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*,^result.*</param>
+			</result>
+		</action>
+		<!--  半自动回退任务判断end -->	
+		<!--  手动回退任务start -->
+		<action name="missionRetreatActionSelf" class="mse.action.ExpStuMissionAction"
+			method="missionRetreatActionSelf">
+			<result type="json">
+				<param name="excludeNullProperties">true</param>
+				<param name="includeProperties">^expStuMissionVos.*,^result.*</param>
+			</result>
+		</action>
+		<!--  手动回退任务end -->	
+		<!--****** 学生课程、角色、任务信息******end -->
+	</package>
+</struts>

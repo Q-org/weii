@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+	
+	<context:annotation-config />
+	
+	<context:component-scan base-package="mse" />
+	
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="locations">
+			<list>
+				
+				<value>classpath:db/jdbc.properties
+				</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="dataSource" class="mse.utils.Md5"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driver}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialSize" value="${jdbc.initialSize}" />
+		<property name="maxActive" value="${jdbc.maxActive}" />
+		<property name="maxIdle" value="${jdbc.maxIdle}" />
+		<property name="minIdle" value="${jdbc.minIdle}" />
+		<property name="poolPreparedStatements" value="${jdbc.poolPreparedStatements}" />
+		<property name="defaultAutoCommit" value="${jdbc.defaultAutoCommit}" />
+	</bean>
+	<!--<bean id="dataSource" class="org.logicalcobwebs.proxool.ProxoolDataSource">
+		<property name="driver">
+			<value>${jdbc.driver}</value>
+		</property>
+		<property name="driverUrl">
+			<value>${jdbc.url}</value>
+		</property>
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="alias" value="qianxue_v3" />
+		<property name="houseKeepingSleepTime" value="90000" />
+		<property name="prototypeCount" value="0" />
+		<property name="maximumConnectionCount" value="50" />
+		<property name="minimumConnectionCount" value="2" />
+		<property name="simultaneousBuildThrottle" value="50" />
+		<property name="maximumConnectionLifetime" value="14400000" />
+		<property name="houseKeepingTestSql" value="select count(*) from exp_parameter" />
+	</bean>-->
+	
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties" ref="hibernateProperties" />
+		<property name="configLocation" value="classpath:db/hibernate.cfg.xml"></property>
+	</bean>
+
+	<bean name="hibernateProperties"
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property name="properties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">${hibernate.format_sql}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}
+				</prop>
+				<prop key="hibernate.cache.provider_class">${hibernate.cache.provider_class}
+				</prop>
+				<prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}
+				</prop>
+				<prop key="cache.use_second_level_cache">${cache.use_second_level_cache}
+				</prop>
+				<!--
+					<prop
+					key="hibernate.cache.provider_configuration_file_resource_path">${hibernate.ehcache_config_file}</prop>
+				-->
+				<prop key="hibernate.query.factory_class">${hibernate.query.factory_class}
+				</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<tx:advice id="txadvice">
+		<tx:attributes>
+			<tx:method name="save*" propagation="REQUIRED"/>
+			<tx:method name="execute*" propagation="REQUIRED"/>
+			<tx:method name="delete*" propagation="REQUIRED"/>
+			<tx:method name="update*" propagation="REQUIRED"/>
+			<tx:method name="login*" propagation="REQUIRED"/>
+			<tx:method name="logout*" propagation="REQUIRED"/>
+			<tx:method name="get*" propagation="REQUIRED"/>
+			<tx:method name="*" propagation="SUPPORTS" read-only="true"/>
+		</tx:attributes>
+	</tx:advice>
+	<aop:config proxy-target-class="true">
+		<aop:advisor advice-ref="txadvice" pointcut="execution(* mse.service.*.*(..))"/>
+	</aop:config>
+	
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+	</bean>
+	
+	<bean id="sIdentifier" class="mse.common.business.SystemIdentifier">
+		<property name="identifier" value="1011"></property>
+	</bean>
+	<!-- 适用于课程、课程、章节、单元节点 tree -->
+	<bean id="expMutiExpCourUtil" class="mse.utils.ExpMutiExpCourUtil"
+		scope="singleton" init-method="initTree" destroy-method="cleanUp">
+	</bean>
+</beans>

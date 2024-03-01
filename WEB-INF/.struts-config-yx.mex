@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/expNews.do" location="165,15" dimension="358,84" />
+  <StrutsActivity path="/personInfo.do" location="950,150" dimension="358,84" />
+  <StrutsActivity path="/expCoursewareCells.do" location="350,550" dimension="307,92" />
+  <StrutsActivity path="/testTheme.do" location="1250,750" dimension="307,92" />
+  <StrutsActivity path="/billExpAppList.do" location="1550,50" dimension="307,92" />
+  <StrutsActivity path="/expContentss.do" location="1550,250" dimension="307,92" />
+  <StrutsActivity path="/accEnterBackfile.do" location="1550,1050" dimension="307,92" />
+  <StrutsActivity path="/accEnterBacktext.do" location="1550,1250" dimension="307,92" />
+  <StrutsActivity path="/web/filter/exp_news/exp_news_add.jsp" location="650,50" dimension="262,48" />
+  <StrutsActivity path="/web/filter/exp_news/exp_news_stu_list.jsp" location="650,850" dimension="292,48" />
+  <StrutsActivity path="/web/filter/exp_news/exp_news_stu_look.jsp" location="50,950" dimension="292,48" />
+  <StrutsActivity path="/web/filter/exp_news/exp_news_detail.jsp" location="14,214" dimension="280,48" />
+  <StrutsActivity path="/web/filter/exp_news/exp_news_search.jsp" location="394,214" dimension="280,48" />
+  <StrutsActivity path="/web/filter/sys_user/sys_user_edit.jsp" location="350,350" dimension="268,48" />
+  <StrutsActivity path="/web/filter/sys_user/sys_student_edit.jsp" location="950,350" dimension="286,48" />
+  <StrutsActivity path="/web/filter/sys_user/sys_teacher_edit.jsp" location="50,450" dimension="286,48" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_add_url.jsp" location="950,550" dimension="366,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_add.jsp" location="50,750" dimension="348,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_add_char.jsp" location="950,650" dimension="376,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_content.jsp" location="1250,950" dimension="366,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_add_bill.jsp" location="650,750" dimension="366,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_add_file.jsp" location="50,850" dimension="368,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_stulist.jsp" location="50,1350" dimension="430,48" />
+  <StrutsActivity path="/web/filter/test_theme/test_theme_list.jsp" location="1250,1050" dimension="225,50" />
+  <StrutsActivity path="/web/filter/test_theme/test_theme_add.jsp" location="50,1150" dimension="230,50" />
+  <StrutsActivity path="/web/filter/test_theme/look_over_test_result.jsp" location="350,1150" dimension="257,50" />
+  <StrutsActivity path="/web/filter/test_theme/test_theme_edit.jsp" location="950,1150" dimension="229,50" />
+  <StrutsActivity path="/web/filter/test_theme/test_theme_stu.jsp" location="1250,1150" dimension="227,50" />
+  <StrutsActivity path="/web/filter/test_theme/test_theme_existCopy.jsp" location="50,1250" dimension="260,50" />
+  <StrutsActivity path="/web/filter/test_theme/test_theme_batchUpdate.jsp" location="650,1250" dimension="273,50" />
+  <StrutsActivity path="/web/filter/test_theme/test_theme_result.jsp" location="1250,1250" dimension="239,50" />
+  <StrutsActivity path="/web/filter/test_theme/to_exist_copy1.jsp" location="1550,650" dimension="227,50" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_file/acc_enter_file_search.jsp" location="50,1550" dimension="391,50" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_file/acc_enter_file.jsp" location="650,1550" dimension="351,50" />
+  <StrutsActivity path="/web/filter/exp_course/acc_enter/acc_enter_text/acc_enter_text_search.jsp" location="1550,550" dimension="399,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_stu_formset.jsp" location="650,1050" dimension="388,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells/exp_courseware_cells_formset.jsp" location="650,950" dimension="367,50" />
+  <StrutsActivity path="/web/filter/exp_courseware_cells_formset.jsp" location="1250,450" dimension="252,50" />
+  <StrutsActivity path="/web/filter/" location="50,350" dimension="112,48" />
+  <StrutsActivity path="${pageContext.request.contextPath}" location="650,450" dimension="244,48" />
+  <StrutsActivity path="/${pageContext.request.contextPath}" location="950,450" dimension="250,48" />
+  <StrutsActivity path="/" location="50,550" dimension="46,48" />
+  <StrutsActivity path="" location="50,1050" dimension="28,50" />
+  <StrutsTransition id="/testTheme.do,to_look_stu_result,/web/filter/test_theme/look_over_test_result.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1433,842" />
+      <AbsolutePoint location="1433,915" />
+      <AbsolutePoint location="478,915" />
+      <AbsolutePoint location="478,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnterBacktext.do,acc_enter_text_edit,/web/filter/exp_course/acc_enter/acc_enter_text/acc_enter_text_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1703,1296" />
+      <AbsolutePoint location="1749,575" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnterBackfile.do,acc_enter_file_search,/web/filter/exp_course/acc_enter/acc_enter_file/acc_enter_file_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,1085" />
+      <AbsolutePoint location="1534,1085" />
+      <AbsolutePoint location="1534,1675" />
+      <AbsolutePoint location="245,1675" />
+      <AbsolutePoint location="245,1600" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_theme_doTest,/web/filter/test_theme/test_theme_stu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1403,842" />
+      <AbsolutePoint location="1403,865" />
+      <AbsolutePoint location="1224,865" />
+      <AbsolutePoint location="1224,1175" />
+      <AbsolutePoint location="1250,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNews.do,exp_News_edit,/web/filter/exp_news/exp_news_detail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="279,99" />
+      <AbsolutePoint location="279,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personInfo.do,sys_user_edit,/web/filter/sys_user/sys_user_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,192" />
+      <AbsolutePoint location="379,192" />
+      <AbsolutePoint location="379,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_edit_char,/web/filter/exp_courseware_cells/exp_courseware_cells_add_char.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="657,615" />
+      <AbsolutePoint location="1138,615" />
+      <AbsolutePoint location="1138,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNews.do,exp_news_add,/web/filter/exp_news/exp_news_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="523,65" />
+      <AbsolutePoint location="650,65" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_stu,/web/filter/exp_courseware_cells/exp_courseware_cells_stulist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="622,642" />
+      <AbsolutePoint location="622,1374" />
+      <AbsolutePoint location="480,1374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_theme_add,/web/filter/test_theme/test_theme_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,815" />
+      <AbsolutePoint location="-61,815" />
+      <AbsolutePoint location="-61,1175" />
+      <AbsolutePoint location="50,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_theme_to_existCopy,/web/filter/test_theme/test_theme_existCopy.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1403,750" />
+      <AbsolutePoint location="1403,715" />
+      <AbsolutePoint location="-31,715" />
+      <AbsolutePoint location="-31,1275" />
+      <AbsolutePoint location="50,1275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_ans_save,/web/filter/test_theme/test_theme_stu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1557,766" />
+      <AbsolutePoint location="2024,766" />
+      <AbsolutePoint location="2024,1175" />
+      <AbsolutePoint location="1477,1175" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personInfo.do,sys_student_edit,/web/filter/sys_user/sys_student_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,234" />
+      <AbsolutePoint location="1129,350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_theme_query,/web/filter/test_theme/test_theme_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,785" />
+      <AbsolutePoint location="1113,785" />
+      <AbsolutePoint location="1113,1075" />
+      <AbsolutePoint location="1250,1075" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnterBackfile.do,acc_enter_file_download,/web/filter/exp_course/acc_enter/acc_enter_file/acc_enter_file.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1857,1096" />
+      <AbsolutePoint location="2054,1096" />
+      <AbsolutePoint location="2054,1575" />
+      <AbsolutePoint location="1001,1575" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expContentss.do,to_exist_copy1,/web/filter/test_theme/to_exist_copy1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1550,296" />
+      <AbsolutePoint location="1517,296" />
+      <AbsolutePoint location="1517,675" />
+      <AbsolutePoint location="1550,675" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNews.do,exp_news_search,/web/filter/exp_news/exp_news_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="409,99" />
+      <AbsolutePoint location="409,214" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/accEnterBacktext.do,acc_enter_text_search,/web/filter/exp_course/acc_enter/acc_enter_text/acc_enter_text_search.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1857,1296" />
+      <AbsolutePoint location="1932,1296" />
+      <AbsolutePoint location="1932,600" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_theme_to_batchUpdate,/web/filter/test_theme/test_theme_batchUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1557,826" />
+      <AbsolutePoint location="1902,826" />
+      <AbsolutePoint location="1902,1473" />
+      <AbsolutePoint location="786,1473" />
+      <AbsolutePoint location="786,1300" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_content_char,/web/filter/exp_courseware_cells/exp_courseware_cells_content.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="508,642" />
+      <AbsolutePoint location="508,1115" />
+      <AbsolutePoint location="1504,1115" />
+      <AbsolutePoint location="1504,1000" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_query,/web/filter/exp_courseware_cells/exp_courseware_cells_add.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="383,642" />
+      <AbsolutePoint location="383,750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_edit_url,/web/filter/exp_courseware_cells/exp_courseware_cells_add_url.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="657,585" />
+      <AbsolutePoint location="950,585" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_theme_list_update,/web/filter/test_theme/test_theme_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,755" />
+      <AbsolutePoint location="1064,755" />
+      <AbsolutePoint location="1064,1150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/testTheme.do,test_theme_doSubmit,/web/filter/test_theme/test_theme_result.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1557,796" />
+      <AbsolutePoint location="1964,796" />
+      <AbsolutePoint location="1964,1215" />
+      <AbsolutePoint location="1369,1215" />
+      <AbsolutePoint location="1369,1250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_content_bill,/web/filter/exp_courseware_cells/exp_courseware_cells_content.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="538,642" />
+      <AbsolutePoint location="538,1015" />
+      <AbsolutePoint location="1433,1015" />
+      <AbsolutePoint location="1433,1000" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/personInfo.do,sys_teacher_edit,/web/filter/sys_user/sys_teacher_edit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="950,162" />
+      <AbsolutePoint location="309,162" />
+      <AbsolutePoint location="309,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNews.do,exp_news_stu_list,/web/filter/exp_news/exp_news_stu_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,57" />
+      <AbsolutePoint location="-121,57" />
+      <AbsolutePoint location="-121,665" />
+      <AbsolutePoint location="568,665" />
+      <AbsolutePoint location="568,874" />
+      <AbsolutePoint location="650,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_edit_bill,/web/filter/exp_courseware_cells/exp_courseware_cells_add_bill.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="478,642" />
+      <AbsolutePoint location="478,775" />
+      <AbsolutePoint location="650,775" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expCoursewareCells.do,exp_courseware_cells_edit_file,/web/filter/exp_courseware_cells/exp_courseware_cells_add_file.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="403,642" />
+      <AbsolutePoint location="403,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/expNews.do,exp_news_stu_look,/web/filter/exp_news/exp_news_stu_look.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,87" />
+      <AbsolutePoint location="-1,87" />
+      <AbsolutePoint location="-1,974" />
+      <AbsolutePoint location="50,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

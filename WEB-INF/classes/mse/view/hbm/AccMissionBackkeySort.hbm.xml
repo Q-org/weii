@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+    <class name="mse.view.AccMissionBackkeySort" table="acc_mission_backkey_sort">
+        <composite-id name="id" class="mse.view.AccMissionBackkeySortId">
+            <key-property name="pkid" type="java.lang.Long">
+                <column name="pkid" length="60" />
+            </key-property>
+            <key-property name="missionId" type="java.lang.String">
+                <column name="missionid" length="50" />
+            </key-property>
+            <key-property name="missionTitle" type="java.lang.String">
+                <column name="mission_title" length="100" />
+            </key-property>
+            <key-property name="missionPt" type="java.lang.String">
+                <column name="mission_pt" length="100" />
+            </key-property>
+            <key-property name="standardUrl" type="java.lang.String">
+                <column name="standard_url" length="100" />
+            </key-property>
+            <key-property name="studentUrl" type="java.lang.String">
+                <column name="student_url" length="100" />
+            </key-property>
+            <key-property name="mt" type="java.lang.String">
+                <column name="mt" length="100" />
+            </key-property>
+            <key-property name="m" type="java.lang.Long">
+                <column name="m" length="10" />
+            </key-property>
+             <key-property name="pageNo" type="java.lang.String">
+                <column name="pageNo" length="10" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
+
