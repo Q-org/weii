@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_wei_w=self.webpackChunk_wei_w||[]).push([[688],{37287:(e,t,w)=>{w.r(t),w.d(t,{default:()=>s});w(2784);var h=w(52322);function s(){return(0,h.jsx)("iframe",{src:"https://www.doubao.com/chat/",width:"800",height:"600"})}}}]);

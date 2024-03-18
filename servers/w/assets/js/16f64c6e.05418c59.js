@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_wei_w=self.webpackChunk_wei_w||[]).push([[2217],{41339:(e,s,t)=>{t.r(s),t.d(s,{default:()=>r});t(2784),t(12693),t(86776),t(33128);var w=t(52322);t(50989);var a=t(7267);const r=()=>(0,w.jsxs)(w.Fragment,{children:[(0,w.jsx)(a.l_,{to:"/NewPost"}),";"]})}}]);

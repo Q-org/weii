@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[6728],{26760:(e,c,n)=>{n.r(c),n.d(c,{default:()=>i});n(96540);var r=n(74848);function i(){return(0,r.jsx)(r.Fragment,{children:(0,r.jsx)("div",{children:"checkcoC"})})}}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[1344],{7299:(e,s,u)=>{u.r(s),u.d(s,{default:()=>n});u(96540);var i=u(74848);function n(){return(0,i.jsx)("div",{children:"ast"})}}}]);

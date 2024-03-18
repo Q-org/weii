@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[2386],{26556:(e,s,t)=>{t.r(s),t.d(s,{default:()=>u});t(96540);var n=t(56347),r=t(74848);const u=function(){return(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(n.rd,{to:"/NewPost"}),";"]})}}}]);

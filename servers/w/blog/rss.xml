@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>微课程 Blog</title>
-        <link>https://qio.wiki/blog</link>
+        <link>https://qorg.xyz/blog</link>
         <description>微课程 Blog</description>
         <lastBuildDate>Fri, 28 Apr 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,8 +10,8 @@
         <language>zh-CN</language>
         <item>
             <title><![CDATA[渐进式网页应用]]></title>
-            <link>https://qio.wiki/blog/微微是PWA</link>
-            <guid>https://qio.wiki/blog/微微是PWA</guid>
+            <link>https://qorg.xyz/blog/微微是PWA</link>
+            <guid>https://qorg.xyz/blog/微微是PWA</guid>
             <pubDate>Fri, 28 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[什么使微微成为PWA?]]></description>
             <category>微微</category>
@@ -20,21 +20,15 @@
         </item>
         <item>
             <title><![CDATA[通知, 推送功能]]></title>
-            <link>https://qio.wiki/blog/mdx-blog-post</link>
-            <guid>https://qio.wiki/blog/mdx-blog-post</guid>
+            <link>https://qorg.xyz/blog/mdx-blog-post</link>
+            <guid>https://qorg.xyz/blog/mdx-blog-post</guid>
             <pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[可重用]]></description>
-            <category>推送</category>
-            <category>通知</category>
-            <category>微微</category>
-            <category>pwa</category>
-            <category>可重用</category>
-            <category>请求授权</category>
         </item>
         <item>
             <title><![CDATA[核心模块]]></title>
-            <link>https://qio.wiki/blog/核心模块</link>
-            <guid>https://qio.wiki/blog/核心模块</guid>
+            <link>https://qorg.xyz/blog/核心模块</link>
+            <guid>https://qorg.xyz/blog/核心模块</guid>
             <pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[This is the summary of a very long blog post,]]></description>
             <category>微微</category>
@@ -42,8 +36,8 @@
         </item>
         <item>
             <title><![CDATA[欢迎]]></title>
-            <link>https://qio.wiki/blog/欢迎</link>
-            <guid>https://qio.wiki/blog/欢迎</guid>
+            <link>https://qorg.xyz/blog/欢迎</link>
+            <guid>https://qorg.xyz/blog/欢迎</guid>
             <pubDate>Thu, 26 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></description>
             <category>微微</category>
