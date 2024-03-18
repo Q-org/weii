@@ -37,7 +37,7 @@
   <!-- ID of the service. It should be unique across the Windows system-->
   <id>qfrps</id>
   <!-- Display name of the service -->
-  <name>qfrps</name>
+  <name>@wei/frps</name>
   <!-- Service description -->
   <description>Powered by Qio</description>
 
@@ -46,7 +46,7 @@
 <arguments>-c %BASE%\frp\frps.ini</arguments>
 <workingdirectory>%BASE%\frp</workingdirectory>
 <showwindow>true</showwindow>
-<logpath>%BASE%\logs\mslog</logpath>
+<logpath>%BASE%\frp\logs</logpath>
     <!--
     OPTION: stopparentprocessfirst
     If set, WinSW will terminate the parent process before stopping the children.

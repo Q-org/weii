@@ -37,7 +37,7 @@
   <!-- ID of the service. It should be unique across the Windows system-->
   <id>qw</id>
   <!-- Display name of the service -->
-  <name>qiow</name>
+  <name>@wei/w</name>
   <!-- Service description -->
   <description>Powered by qio</description>
 
@@ -45,7 +45,7 @@
 <executable>C:\Program Files\nodejs\node</executable>
 <arguments>%BASE%\..\node_modules\serve\build\main.js -l 83 %BASE%\w</arguments>
 <workingdirectory>%BASE%</workingdirectory>
-<logpath>%BASE%\logs\mslog</logpath>
+<logpath>%BASE%\w\log</logpath>
     <!--
     OPTION: stopparentprocessfirst
     If set, WinSW will terminate the parent process before stopping the children.

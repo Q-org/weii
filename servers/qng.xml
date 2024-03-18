@@ -35,18 +35,15 @@
 <service>
 
   <!-- ID of the service. It should be unique across the Windows system-->
-  <id>qDev</id>
+  <id>qng</id>
   <!-- Display name of the service -->
-  <name>qDev</name>
+  <name>@wei/ng</name>
   <!-- Service description -->
-  <description>Powered by Qio</description>
+  <description>Powered by qio</description>
 
   <!-- Path to the executable, which should be started -->
-<executable>%BASE%\frp\frpc.exe</executable>
-<arguments>-c %BASE%\frp\qDev.ini</arguments>
-<workingdirectory>%BASE%\frp</workingdirectory>
-<showwindow>true</showwindow>
-<logpath>%BASE%\logs\mslog</logpath>
+  <executable>%BASE%\qng\nginx.exe </executable>
+  <logpath>%BASE%\qng\log</logpath>
     <!--
     OPTION: stopparentprocessfirst
     If set, WinSW will terminate the parent process before stopping the children.
