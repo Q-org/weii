@@ -248,5 +248,6 @@
       "src/main/**"
     ],
     "logLevel": "quiet"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
