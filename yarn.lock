@@ -11232,12 +11232,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:*, prettier@npm:^3.0.3":
+"prettier-plugin-nginx@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "prettier-plugin-nginx@npm:1.0.3::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fprettier-plugin-nginx%2F-%2Fprettier-plugin-nginx-1.0.3.tgz"
+  checksum: 10c0/3f4678828053c863b7dcd6ea11b93442f1b7643a3fe0731edb15711f29f7402bad92a870ae2d108890d4df4d1356a4d70e44b3553bd905663f72c343689c0dae
+  languageName: node
+  linkType: hard
+
+"prettier@npm:*":
   version: 3.2.5
   resolution: "prettier@npm:3.2.5::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fprettier%2F-%2Fprettier-3.2.5.tgz"
   bin:
     prettier: bin/prettier.cjs
   checksum: 10c0/ea327f37a7d46f2324a34ad35292af2ad4c4c3c3355da07313339d7e554320f66f65f91e856add8530157a733c6c4a897dc41b577056be5c24c40f739f5ee8c6
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "prettier@npm:3.3.3::__archiveUrl=https%3A%2F%2Fregistry.npmmirror.com%2Fprettier%2F-%2Fprettier-3.3.3.tgz"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 10c0/b85828b08e7505716324e4245549b9205c0cacb25342a030ba8885aba2039a115dbcf75a0b7ca3b37bc9d101ee61fab8113fc69ca3359f2a226f1ecc07ad2e26
   languageName: node
   linkType: hard
 
@@ -12012,7 +12028,8 @@ __metadata:
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     mini-css-extract-plugin: "npm:^2.7.6"
-    prettier: "npm:^3.0.3"
+    prettier: "npm:^3.3.3"
+    prettier-plugin-nginx: "npm:^1.0.3"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-refresh: "npm:^0.14.0"
