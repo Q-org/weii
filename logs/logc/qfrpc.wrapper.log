@@ -1,0 +1,913 @@
+2024-09-14 13:03:45,876 DEBUG - Starting WinSW in service mode
+2024-09-14 13:03:46,476 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-14 13:03:46,601 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-17 12:40:34,120 DEBUG - Starting WinSW in service mode
+2024-09-17 12:40:34,751 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-17 12:40:34,819 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-18 15:46:54,210 DEBUG - Starting WinSW in service mode
+2024-09-18 15:46:54,825 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-18 15:46:54,965 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-18 21:37:19,872 DEBUG - Starting WinSW in service mode
+2024-09-18 21:37:20,371 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-18 21:37:20,446 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-20 15:04:55,959 DEBUG - Starting WinSW in service mode
+2024-09-20 15:04:56,434 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-20 15:04:56,519 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-20 18:56:48,782 DEBUG - Starting WinSW in service mode
+2024-09-20 18:56:49,228 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-20 18:56:49,311 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-22 10:23:56,662 DEBUG - Starting WinSW in service mode
+2024-09-22 10:23:58,961 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-22 10:23:59,096 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-25 16:47:40,667 DEBUG - Starting WinSW in service mode
+2024-09-25 16:47:41,108 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-25 16:47:41,185 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-27 16:35:51,152 DEBUG - Starting WinSW in service mode
+2024-09-27 16:35:51,812 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-27 16:35:51,953 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-27 18:36:51,418 DEBUG - Starting WinSW in service mode
+2024-09-27 18:36:51,924 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-27 18:36:52,004 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-27 20:16:53,105 DEBUG - Starting WinSW in service mode
+2024-09-27 20:16:53,563 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-27 20:16:53,637 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-27 21:53:47,849 DEBUG - Starting WinSW in service mode
+2024-09-27 21:53:48,414 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-27 21:53:48,496 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-28 15:46:06,762 DEBUG - Starting WinSW in service mode
+2024-09-28 15:46:07,294 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-28 15:46:07,409 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-28 21:49:47,642 DEBUG - Starting WinSW in service mode
+2024-09-28 21:49:48,155 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-28 21:49:48,266 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-29 01:19:11,143 DEBUG - Starting WinSW in service mode
+2024-09-29 01:19:11,581 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-29 01:19:11,660 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-09-29 10:16:58,386 DEBUG - Starting WinSW in service mode
+2024-09-29 10:16:58,894 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-09-29 10:16:59,000 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-01 13:27:59,572 DEBUG - Starting WinSW in service mode
+2024-10-01 13:28:00,033 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-01 13:28:00,130 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-03 14:16:26,618 DEBUG - Starting WinSW in service mode
+2024-10-03 14:16:27,353 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-03 14:16:27,601 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-04 09:56:44,244 DEBUG - Starting WinSW in service mode
+2024-10-04 09:56:44,773 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-04 09:56:44,850 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-06 14:56:40,867 DEBUG - Starting WinSW in service mode
+2024-10-06 14:56:41,958 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-06 14:56:42,152 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-09 02:24:18,334 DEBUG - Starting WinSW in service mode
+2024-10-09 02:24:19,114 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-09 02:24:19,224 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-09 12:44:09,347 DEBUG - Starting WinSW in service mode
+2024-10-09 12:44:09,915 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-09 12:44:10,097 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-09 16:28:47,732 DEBUG - Starting WinSW in service mode
+2024-10-09 16:28:48,201 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-09 16:28:48,300 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-12 03:17:06,660 DEBUG - Starting WinSW in service mode
+2024-10-12 03:17:07,441 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-12 03:17:07,537 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-13 18:07:25,522 DEBUG - Starting WinSW in service mode
+2024-10-13 18:07:26,396 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-13 18:07:26,476 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-13 19:56:01,506 DEBUG - Starting WinSW in service mode
+2024-10-13 19:56:02,326 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-13 19:56:02,428 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-14 00:44:07,582 DEBUG - Starting WinSW in service mode
+2024-10-14 00:44:08,525 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-14 00:44:08,626 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-14 21:46:18,273 DEBUG - Starting WinSW in service mode
+2024-10-14 21:46:18,721 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-14 21:46:18,822 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-15 18:15:53,457 DEBUG - Starting WinSW in service mode
+2024-10-15 18:15:54,069 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-15 18:15:54,153 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-16 00:04:46,653 DEBUG - Starting WinSW in service mode
+2024-10-16 00:04:47,405 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-16 00:04:47,498 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-18 16:31:41,665 DEBUG - Starting WinSW in service mode
+2024-10-18 16:31:42,334 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-18 16:31:42,450 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-22 15:28:32,204 DEBUG - Starting WinSW in service mode
+2024-10-22 15:28:32,775 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-22 15:28:32,903 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-22 19:39:25,738 DEBUG - Starting WinSW in service mode
+2024-10-22 19:39:26,394 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-22 19:39:26,485 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-23 05:17:52,518 DEBUG - Starting WinSW in service mode
+2024-10-23 05:17:52,847 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-23 05:17:52,906 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-24 03:56:49,973 DEBUG - Starting WinSW in service mode
+2024-10-24 03:56:50,475 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-24 03:56:50,540 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-24 10:27:11,472 DEBUG - Starting WinSW in service mode
+2024-10-24 10:27:12,004 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-24 10:27:12,081 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-24 12:11:55,377 DEBUG - Starting WinSW in service mode
+2024-10-24 12:11:55,988 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-24 12:11:56,081 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-24 23:51:54,241 DEBUG - Starting WinSW in service mode
+2024-10-24 23:51:54,787 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-24 23:51:54,894 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-25 18:11:52,221 DEBUG - Starting WinSW in service mode
+2024-10-25 18:11:53,291 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-25 18:11:53,428 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-26 17:04:19,054 DEBUG - Starting WinSW in service mode
+2024-10-26 17:04:19,781 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-26 17:04:19,858 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-29 07:44:11,180 DEBUG - Starting WinSW in service mode
+2024-10-29 07:44:12,135 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-29 07:44:12,245 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-29 11:29:29,266 DEBUG - Starting WinSW in service mode
+2024-10-29 11:29:29,987 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-29 11:29:30,074 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-30 01:10:31,175 DEBUG - Starting WinSW in service mode
+2024-10-30 01:10:32,181 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-30 01:10:32,451 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-30 10:47:36,011 DEBUG - Starting WinSW in service mode
+2024-10-30 10:47:36,794 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-30 10:47:36,879 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-10-30 19:22:05,322 DEBUG - Starting WinSW in service mode
+2024-10-30 19:22:05,892 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-10-30 19:22:06,013 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-02 12:25:57,437 DEBUG - Starting WinSW in service mode
+2024-11-02 12:25:58,054 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-02 12:25:58,144 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-03 11:24:43,393 DEBUG - Starting WinSW in service mode
+2024-11-03 11:24:44,185 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-03 11:24:44,321 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-04 13:58:59,115 DEBUG - Starting WinSW in service mode
+2024-11-04 13:58:59,991 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-04 13:59:00,120 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-04 14:49:25,770 DEBUG - Starting WinSW in service mode
+2024-11-04 14:49:26,602 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-04 14:49:26,679 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-04 17:00:12,390 DEBUG - Starting WinSW in service mode
+2024-11-04 17:00:13,139 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-04 17:00:13,251 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-04 20:23:59,341 DEBUG - Starting WinSW in service mode
+2024-11-04 20:23:59,856 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-04 20:23:59,922 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-05 12:44:07,197 DEBUG - Starting WinSW in service mode
+2024-11-05 12:44:08,169 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-05 12:44:08,278 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-05 22:01:56,173 DEBUG - Starting WinSW in service mode
+2024-11-05 22:01:56,622 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-05 22:01:56,707 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-06 15:20:04,447 DEBUG - Starting WinSW in service mode
+2024-11-06 15:20:05,124 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-06 15:20:05,243 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-06 17:17:09,793 DEBUG - Starting WinSW in service mode
+2024-11-06 17:17:10,760 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-06 17:17:10,894 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-06 17:30:33,591 DEBUG - Starting WinSW in service mode
+2024-11-06 17:30:34,389 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-06 17:30:34,571 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-07 05:58:09,685 DEBUG - Starting WinSW in service mode
+2024-11-07 05:58:10,234 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-07 05:58:10,326 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-07 15:32:03,937 DEBUG - Starting WinSW in service mode
+2024-11-07 15:32:04,449 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-07 15:32:04,543 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-08 14:17:30,942 DEBUG - Starting WinSW in service mode
+2024-11-08 14:17:31,576 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-08 14:17:31,683 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-08 22:49:53,530 DEBUG - Starting WinSW in service mode
+2024-11-08 22:49:54,038 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-08 22:49:54,156 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-09 12:05:19,206 DEBUG - Starting WinSW in service mode
+2024-11-09 12:05:19,992 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-09 12:05:20,076 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-09 13:02:10,185 DEBUG - Starting WinSW in service mode
+2024-11-09 13:02:10,731 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-09 13:02:10,816 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-09 21:53:43,880 DEBUG - Starting WinSW in service mode
+2024-11-09 21:53:44,401 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-09 21:53:44,473 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-10 14:27:43,728 DEBUG - Starting WinSW in service mode
+2024-11-10 14:27:44,735 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-10 14:27:44,845 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-10 16:19:39,565 DEBUG - Starting WinSW in service mode
+2024-11-10 16:19:40,479 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-10 16:19:40,592 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-10 16:21:12,754 DEBUG - Starting WinSW in service mode
+2024-11-10 16:21:13,560 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-10 16:21:13,729 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-10 23:42:36,394 DEBUG - Starting WinSW in service mode
+2024-11-10 23:42:37,431 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-10 23:42:37,545 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-11 01:54:55,476 DEBUG - Starting WinSW in service mode
+2024-11-11 01:54:56,226 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-11 01:54:56,429 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-11 11:13:46,765 DEBUG - Starting WinSW in service mode
+2024-11-11 11:13:47,413 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-11 11:13:47,487 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-11 16:41:11,182 DEBUG - Starting WinSW in service mode
+2024-11-11 16:41:11,902 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-11 16:41:11,974 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-12 15:42:03,272 DEBUG - Starting WinSW in service mode
+2024-11-12 15:42:03,787 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-12 15:42:03,895 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-13 10:00:51,033 DEBUG - Starting WinSW in service mode
+2024-11-13 10:00:51,597 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-13 10:00:51,683 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-13 14:10:22,703 DEBUG - Starting WinSW in service mode
+2024-11-13 14:10:23,110 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-13 14:10:23,180 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-13 14:11:38,007 DEBUG - Starting WinSW in service mode
+2024-11-13 14:11:38,497 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-13 14:11:38,577 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-13 15:07:34,378 DEBUG - Starting WinSW in service mode
+2024-11-13 15:07:35,328 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-13 15:07:35,470 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-13 16:43:25,114 DEBUG - Starting WinSW in service mode
+2024-11-13 16:43:25,829 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-13 16:43:25,923 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-13 19:03:37,849 DEBUG - Starting WinSW in service mode
+2024-11-13 19:03:38,285 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-13 19:03:38,364 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-13 20:47:59,205 DEBUG - Starting WinSW in service mode
+2024-11-13 20:48:00,167 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-13 20:48:00,262 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-14 09:47:02,943 DEBUG - Starting WinSW in service mode
+2024-11-14 09:47:03,712 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-14 09:47:03,864 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-14 12:19:01,600 DEBUG - Starting WinSW in service mode
+2024-11-14 12:19:02,793 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-14 12:19:02,962 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-15 19:58:43,151 DEBUG - Starting WinSW in service mode
+2024-11-15 19:58:43,610 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-15 19:58:43,679 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-16 09:36:59,265 DEBUG - Starting WinSW in service mode
+2024-11-16 09:37:00,198 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-16 09:37:00,324 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
+2024-11-18 02:59:26,940 DEBUG - Starting WinSW in service mode
+2024-11-18 02:59:27,708 INFO  - Starting C:\dev\weii\servers\frp\frpc.exe -c C:\dev\weii\servers\frp\frpc.ini
+2024-11-18 02:59:27,814 ERROR - Failed to start service.
+System.ComponentModel.Win32Exception (2): An error occurred trying to start process 'C:\dev\weii\servers\frp\frpc.exe' with working directory 'C:\dev\weii\servers\frp'. 系统找不到指定的文件。
+   at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo )
+   at System.Diagnostics.Process.StartCore(ProcessStartInfo )
+   at System.Diagnostics.Process.Start()
+   at WinSW.Util.ProcessHelper.StartProcessAndCallbackForExit(Process processToStart, String executable, String arguments, Dictionary`2 envVars, String workingDirectory, Nullable`1 priority, ProcessCompletionCallback callback, LogHandler logHandler, Boolean hideWindow)
+   at WinSW.WrapperService.StartProcess(Process processToStart, String arguments, String executable, LogHandler logHandler)
+   at WinSW.WrapperService.DoStart()
+   at WinSW.WrapperService.OnStart(String[] args)
