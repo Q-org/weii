@@ -1,0 +1,381 @@
+{
+  "id": "root",
+  "name": "root",
+  "metaData": {
+    "name": "root",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "local",
+      "buildName": "@wei/root"
+    },
+    "remoteEntry": {
+      "name": "static/chunks/remoteEntry.js",
+      "path": "",
+      "type": "window"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "root",
+    "pluginVersion": "0.7.6",
+    "publicPath": "/root/_next/"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "shareScope": "default",
+      "name": "next/dynamic",
+      "version": "14.2.18",
+      "eager": false,
+      "id": "root:next/dynamic",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/513.2ad91cf5acc7b228.js",
+            "static/chunks/894.d537269989b9907c.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "shareScope": "default",
+      "name": "next/head",
+      "version": "14.2.18",
+      "eager": false,
+      "id": "root:next/head",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/38.c364fff6b2bc8a29.js",
+            "static/chunks/657.d5fda1ce424f94df.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "shareScope": "default",
+      "name": "next/image",
+      "version": "14.2.18",
+      "eager": false,
+      "id": "root:next/image",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/338.8a5734df0b366a57.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "shareScope": "default",
+      "name": "next/link",
+      "version": "14.2.18",
+      "eager": false,
+      "id": "root:next/link",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/684.10e25d9c9ab53b80.js",
+            "static/chunks/747.8fc79aff14761172.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "shareScope": "default",
+      "name": "next/router",
+      "version": "14.2.18",
+      "eager": false,
+      "id": "root:next/router",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/948.7e93c09c6e66e524.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "./SignIn"
+      ]
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "shareScope": "default",
+      "name": "next/script",
+      "version": "14.2.18",
+      "eager": false,
+      "id": "root:next/script",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/86.8801400e9ebfa223.js",
+            "static/chunks/191.4cbf5623f74107a9.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "id": "root:react-dom/client",
+      "requiredVersion": "^18.3.1",
+      "name": "react-dom/client",
+      "version": "18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "root:react-dom",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react/jsx-runtime",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "root:react/jsx-runtime",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "./SignIn"
+      ]
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "shareScope": "default",
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "root:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "./SignIn"
+      ]
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^5.1.1",
+      "shareScope": "default",
+      "version": "5.1.1",
+      "name": "styled-jsx/style",
+      "eager": false,
+      "id": "root:styled-jsx/style",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/675.e41b885865b39c88.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "^5.1.1",
+      "shareScope": "default",
+      "version": "5.1.1",
+      "name": "styled-jsx",
+      "eager": false,
+      "id": "root:styled-jsx",
+      "assets": {
+        "js": {
+          "async": [
+            "static/chunks/framework.d5b33e97bf6caf2d.js"
+          ],
+          "sync": [
+            "static/chunks/258.44bd072951a80c49.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [
+    {
+      "alias": "remote",
+      "consumingFederationContainerName": "root",
+      "federationContainerName": "remote",
+      "moduleName": "Module",
+      "usedIn": [
+        "src/pages/jc.tsx"
+      ],
+      "entry": "http://localhost:84/remoteEntry.js"
+    },
+    {
+      "alias": "simple",
+      "consumingFederationContainerName": "root",
+      "federationContainerName": "simple",
+      "moduleName": "_App",
+      "usedIn": [
+        "src/pages/jc.tsx"
+      ],
+      "entry": "http://localhost:86/_next/static/chunks/remoteEntry.js"
+    },
+    {
+      "entry": "http://localhost:81/jc/remoteEntry.js",
+      "alias": "reactRepo",
+      "moduleName": "UNKNOWN",
+      "federationContainerName": "reactRepo",
+      "consumingFederationContainerName": "root",
+      "usedIn": []
+    }
+  ],
+  "exposes": [
+    {
+      "path": "./SignIn",
+      "id": "root:SignIn",
+      "name": "SignIn",
+      "requires": [
+        "next/router",
+        "react/jsx-runtime",
+        "react"
+      ],
+      "file": "src\\pages\\[prefix]\\SignIn.tsx",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/chunks/417-f8e1c66454acfc9e.js",
+            "static/chunks/300-e3c014f1f5bffa8e.js",
+            "static/chunks/726.341f0a2e0c2aca7f.js",
+            "static/chunks/971-65b234034339bf2f.js",
+            "static/chunks/__federation_expose_SignIn.75a60ae5d708cf3b.js"
+          ],
+          "async": [
+            "static/chunks/117.5c6995260ce2cebd.js",
+            "static/chunks/126.370b17a327908eef.js",
+            "static/chunks/948.7e93c09c6e66e524.js",
+            "static/chunks/55.3b8eb9bd2d2e8270.js",
+            "static/chunks/framework.d5b33e97bf6caf2d.js",
+            "static/chunks/657.d5fda1ce424f94df.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "id": "root",
+  "name": "root",
+  "metaData": {
+    "name": "root",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "local",
+      "buildName": "@wei/root"
+    },
+    "remoteEntry": {
+      "name": "remoteEntry.js",
+      "path": "",
+      "type": "commonjs-module"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "root",
+    "pluginVersion": "0.7.6",
+    "publicPath": "/root/_next/",
+    "prefetchInterface": false
+  },
+  "shared": [
+    {
+      "id": "root:next/dynamic",
+      "name": "next/dynamic",
+      "version": "14.2.18",
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "assets": {
+        "js": {
+          "async": [
+            "1085-25ebab613c266a07.js"
+          ],
+          "sync": [
+            "1513-9a7d0499ed1b4cde.js",
+            "3894-eee758de76c2355d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "root:next/head",
+      "name": "next/head",
+      "version": "14.2.18",
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "assets": {
+        "js": {
+          "async": [
+            "1085-25ebab613c266a07.js"
+          ],
+          "sync": [
+            "2657-cfb457fb06ba57a1.js",
+            "5038-ae6962b47898a5f8.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "root:next/image",
+      "name": "next/image",
+      "version": "14.2.18",
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "assets": {
+        "js": {
+          "async": [
+            "1085-25ebab613c266a07.js"
+          ],
+          "sync": [
+            "7338.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "root:next/link",
+      "name": "next/link",
+      "version": "14.2.18",
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "assets": {
+        "js": {
+          "async": [
+            "1085-25ebab613c266a07.js"
+          ],
+          "sync": [
+            "4747.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "root:next/router",
+      "name": "next/router",
+      "version": "14.2.18",
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "assets": {
+        "js": {
+          "async": [
+            "1085-25ebab613c266a07.js"
+          ],
+          "sync": [
+            "5739.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "root:next/script",
+      "name": "next/script",
+      "version": "14.2.18",
+      "singleton": true,
+      "requiredVersion": "^14.2.18",
+      "assets": {
+        "js": {
+          "async": [
+            "1085-25ebab613c266a07.js"
+          ],
+          "sync": [
+            "2177-66f252a84f160954.js",
+            "4558-b89c1d490a1d882d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "root:react/jsx-runtime",
+      "name": "react/jsx-runtime",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "1085-25ebab613c266a07.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "root:styled-jsx",
+      "name": "styled-jsx",
+      "version": "5.1.1",
+      "singleton": true,
+      "requiredVersion": "^5.1.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "3419-f2635a01c597a3f9.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "federationContainerName": "simple",
+      "moduleName": "UNKNOWN",
+      "alias": "simple",
+      "entry": "http://localhost:86/_next/static/ssr/remoteEntry.js"
+    },
+    {
+      "federationContainerName": "reactRepo",
+      "moduleName": "UNKNOWN",
+      "alias": "reactRepo",
+      "entry": "http://localhost:81/jc/remoteEntry.js"
+    },
+    {
+      "federationContainerName": "remote",
+      "moduleName": "UNKNOWN",
+      "alias": "remote",
+      "entry": "http://localhost:84/remoteEntry.js"
+    }
+  ],
+  "exposes": [
+    {
+      "id": "root:SignIn",
+      "name": "SignIn",
+      "assets": {
+        "js": {
+          "sync": [
+            "3704.js",
+            "701.js",
+            "1363.js",
+            "862.js",
+            "__federation_expose_SignIn-523e01ea50a8cc32.js"
+          ],
+          "async": [
+            "5856.js",
+            "9324.js",
+            "9317.js",
+            "5739.js",
+            "1085-25ebab613c266a07.js",
+            "5038-ae6962b47898a5f8.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      },
+      "path": "./SignIn"
+    }
+  ]
+}

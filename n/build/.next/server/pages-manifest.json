@@ -1,0 +1,22 @@
+{
+  "/[prefix]/SignIn": "pages/[prefix]/SignIn.js",
+  "/[prefix]/login.action": "pages/[prefix]/login.action.js",
+  "/admin": "pages/admin.js",
+  "/_error": "pages/_error.js",
+  "/api/auth/getUserInfo": "pages/api/auth/getUserInfo.js",
+  "/api/restricted": "pages/api/restricted.js",
+  "/api/third-party-callback": "pages/api/third-party-callback.js",
+  "/api/writeFile": "pages/api/writeFile.js",
+  "/api/webpack-hmr": "pages/api/webpack-hmr.js",
+  "/app-w": "pages/app-w.js",
+  "/api/getJSESSIONID": "pages/api/getJSESSIONID.js",
+  "/": "pages/index.js",
+  "/jc": "pages/jc.js",
+  "/user/profile": "pages/user/profile.js",
+  "/ProtectedPage": "pages/ProtectedPage.js",
+  "/api/upload": "pages/api/upload.js",
+  "/api/login": "pages/api/login.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js"
+}
