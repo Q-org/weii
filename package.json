@@ -1,0 +1,7 @@
+{
+  "name": "weii",
+  "packageManager": "yarn@4.5.1",
+  "devDependencies": {
+    "nx": "20.1.0"
+  }
+}

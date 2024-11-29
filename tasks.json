@@ -1,0 +1,11 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "tasks": [
+        {
+          "label": "frp server",
+          "type": "shell",
+          "command": "frps -c frps.ini"
+        }
+      ],
+}
