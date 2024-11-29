@@ -1,0 +1,1 @@
+"use strict";exports.id=5247,exports.ids=[5247],exports.modules={45247:(e,r,s)=>{s.d(r,{fileTypeFromBuffer:()=>t.BI}),s(51455),s(74880);var o=s(5186);s(35932),o.G;var t=s(32024)}};
