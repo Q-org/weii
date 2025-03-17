@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<service>
+    <id>redis</id>
+    <name>@wei/redis</name>
+  <description>Runs a redis. Powered by qio</description>
+  <executable>powershell.exe</executable>
+  <arguments>-ExecutionPolicy Bypass -File "%BASE%\docker-compose-up.ps1"</arguments>
+  <logpath>%BASE%\Logs</logpath>
+  <logmode>rotate</logmode>
+  <startmode>Automatic</startmode>
+ <stopexecutable>powershell.exe</stopexecutable>
+<stoparguments>-ExecutionPolicy Bypass -File "D:\dev\weii\redis\docker-compose-down.ps1"</stoparguments>
+      <!-- 输出日志 -->
+    <stdout>%BASE%\logs\docker-compose.out.log</stdout>
+    <stderr>%BASE%\logs\docker-compose.err.log</stderr>
+</service>
