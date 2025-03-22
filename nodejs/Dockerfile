@@ -1,6 +1,7 @@
 # 使用 Node.js 官方镜像（基于 Debian 12）
 FROM node:current-bookworm
 
+LABEL maintainer="Q Wei<raowj@outlook.com>"
 # 设置时区（可选）
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

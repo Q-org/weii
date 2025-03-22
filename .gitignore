@@ -1,6 +1,6 @@
 Log
 logs/*
-
+node_modules
 
 
 *.log
@@ -8,3 +8,9 @@ logs/*
 pids
 *.pid
 *.seed
+
+
+
+.nx/cache
+.nx/workspace-data
+node_modules

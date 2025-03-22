@@ -2,13 +2,26 @@ version: "3.8"
 
 services:
   redis:
-    image: my-redis-image
-    container_name: Redis
+    image: node-redis:0.0.1
+    container_name: NodeRedis
     restart: always # 确保容器崩溃后自动重启
+
+    # 挂载卷，用于持久化数据和配置
     volumes:
-      - ./redis.conf:/etc/redis/redis.conf
-      - ./data:/data
-      - ./logs:/logs
+      - ./redis.conf:/etc/redis/redis.conf:ro # 配置文件只读
+      - ./data:/data # Redis 数据持久化存储
+      - ./logs:/logs # 日志文件存储
+
+    # 映射端口
     ports:
-      - "881:881"  # 宿主机端口 110 映射到容器的 6379 端口
+      - "110:6379" # 宿主机端口 110 映射到 Redis 的 6379 端口
+
+    # 使用自定义 Redis 配置文件
     command: ["redis-server", "/etc/redis/redis.conf"]
+
+    # 添加健康检查以确保 Redis 服务正常运行
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3

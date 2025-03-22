@@ -1,0 +1,98 @@
+{
+  "name": "weii",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "includedScripts": [],
+  "sourceRoot": "./_test_",
+  "targets": {
+    "graph": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx graph --affected"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx run-many --target=serve --projects=n,w"
+      },
+      "configurations": {
+
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "configurations": {
+
+      }
+    },
+    "jest": {
+      "executor": "nx:run-commands",
+      "configurations": {
+        "repairMD": {
+          "command": "nx run task:jest --configuration=repairMD"
+        }
+      }
+    },
+
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node --experimental-vm-modules node_modules/jest/bin/jest.js --config  jest.config.ts --watch --detectOpenHandles"
+      },
+      "configurations": {
+        "task": {
+          "args": "src/task.spec.ts"
+        },
+        "pouchdb": {
+          "args": "src/pouchdb.spec.ts"
+        }
+      }
+    },
+    "gulp": {
+      "executor": "nx:run-commands",
+      "options": {},
+      "configurations": {
+        "webpckawatch": {
+          "command": "npx webpack --config packages/q/webpack.config.js  --watch"
+        },
+        "watch": {
+          "command": "gulp watch"
+        }
+      }
+    },
+    "nx": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nx reset"
+      },
+      "configurations": {
+        "reset": {
+          "command": "nx  reset"
+        },
+        "repair": {
+          "command": "nx  repair"
+        }
+      }
+    },
+    "local-registry": {
+      "executor": "@nx/js:verdaccio",
+      "options": {
+        "port": 4873,
+        "config": ".verdaccio/config.yml",
+        "storage": "tmp/local-registry/storage"
+      }
+    },
+    "serve-functions": {
+      "command": "npx netlify dev"
+    },
+    "deploy-functions": {
+      "dependsOn": [],
+      "command": "npx netlify deploy",
+      "configurations": {
+        "production": {
+          "command": "npx netlify deploy --prod"
+        }
+      }
+    }
+  }
+}
