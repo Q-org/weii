@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformer Sentiment Analysis</title>
+  </head>
+  <body>
+    <h1>Transformer Sentiment Analysis</h1>
+
+    <form id="inputForm">
+      <label for="inputText">Input Text:</label><br />
+      <textarea id="inputText" rows="4" cols="50"></textarea><br />
+      <button id="submitButton" type="submit">Analyze</button>
+    </form>
+
+    <div id="outputDiv"></div>
+
+    <!-- to load the model -->
+    <script type="module">
+      // 定义一个异步函数
+      async function main() {
+        // 等待模块加载完成
+        const { pipeline } = await import(
+          "https://cdn.jsdelivr.net/npm/@xenova/transformers@latest"
+        );
+
+        // console.log(111111111111111);
+        // 在这里使用模块
+        const classifier = await pipeline("sentiment-analysis");
+        // // get input text
+        // let inputText = document.getElementById("inputText");
+        // // get output div
+        // let outputDiv = document.getElementById("outputDiv");
+        // // get submit button
+        // let submitButton = document.getElementById("submitButton");
+        // // get form
+        // let inputForm = document.getElementById("inputForm");
+
+        // // on submit button click
+        // inputForm.addEventListener("submit", async (e) => {
+        //   // prevent default form submission
+        //   e.preventDefault();
+
+        //   // Specifying classifier task
+        //   let classifier = await pipeline("sentiment-analysis");
+        //   console.log("1212");
+        //   // classifying the input text
+        //   let result = await classifier(inputText.value);
+
+        //   // showing the result
+        //   outputDiv.innerHTML =
+        //     "Sentiment: " +
+        //     result[0].label +
+        //     ", Confidence: " +
+        //     result[0].score;
+        // });
+      }
+
+      // 调用异步函数
+      main();
+    </script>
+  </body>
+</html>

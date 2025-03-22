@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwei=self.webpackChunkwei||[]).push([[5623],{82215:(e,n,i)=>{i.r(n),i.d(n,{default:()=>t});i(30758);var o=i(86070);const t=function(){return(0,o.jsxs)("div",{id:"root-component",children:[(0,o.jsx)("h1",{children:"Root Component"}),(0,o.jsx)("div",{id:"container"})]})}}}]);

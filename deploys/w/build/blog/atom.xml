@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://qio.wiki/blog/</id>
+    <title>微课程 Blog</title>
+    <updated>2024-08-30T05:37:11.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://qio.wiki/blog/"/>
+    <subtitle>微课程 Blog</subtitle>
+    <icon>https://qio.wiki/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[树状结构数据处理方法]]></title>
+        <id>https://qio.wiki/blog/树状结构数据处理方法/</id>
+        <link href="https://qio.wiki/blog/树状结构数据处理方法/"/>
+        <updated>2024-08-30T05:37:11.000Z</updated>
+        <summary type="html"><![CDATA[1. 递归遍历]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最新会计科目表（2024）]]></title>
+        <id>https://qio.wiki/blog/2024/08/29/T07-16-31Z/</id>
+        <link href="https://qio.wiki/blog/2024/08/29/T07-16-31Z/"/>
+        <updated>2024-08-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2024-01-31 22:30]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[最新会计科目表（2024）]]></title>
+        <id>https://qio.wiki/blog/2024/08/18/T03-59-46Z/</id>
+        <link href="https://qio.wiki/blog/2024/08/18/T03-59-46Z/"/>
+        <updated>2024-08-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[2024-01-31 22:30]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[渐进式网页应用]]></title>
+        <id>https://qio.wiki/blog/微微是PWA/</id>
+        <link href="https://qio.wiki/blog/微微是PWA/"/>
+        <updated>2023-04-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[什么使微微成为PWA?]]></summary>
+        <author>
+            <name>q-org</name>
+            <uri>https://github.com/q-org</uri>
+        </author>
+        <category label="微微" term="微微"/>
+        <category label="pwa" term="pwa"/>
+        <category label="渐进式网页应用" term="渐进式网页应用"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[通知, 推送功能]]></title>
+        <id>https://qio.wiki/blog/mdx-blog-post/</id>
+        <link href="https://qio.wiki/blog/mdx-blog-post/"/>
+        <updated>2023-04-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[可重用]]></summary>
+        <author>
+            <name>Yangshun Tay</name>
+            <uri>https://github.com/yangshun</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[核心模块]]></title>
+        <id>https://qio.wiki/blog/核心模块/</id>
+        <link href="https://qio.wiki/blog/核心模块/"/>
+        <updated>2023-04-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
+        <category label="微微" term="微微"/>
+        <category label="pwa" term="pwa"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[欢迎]]></title>
+        <id>https://qio.wiki/blog/欢迎/</id>
+        <link href="https://qio.wiki/blog/欢迎/"/>
+        <updated>2021-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Docusaurus blogging features are powered by the blog plugin.]]></summary>
+        <author>
+            <name>q-org</name>
+            <uri>https://github.com/q-org</uri>
+        </author>
+        <category label="微微" term="微微"/>
+        <category label="pwa" term="pwa"/>
+        <category label="渐近式web 应用" term="渐近式web 应用"/>
+    </entry>
+</feed>

@@ -1,0 +1,5 @@
+# Algolia-Crawler-Verif: 778081F3D684DCC9
+
+User-agent: *
+Allow: /
+Sitemap: https://qorg.xyz//sitemap.xml
