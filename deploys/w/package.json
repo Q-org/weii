@@ -1,4 +1,6 @@
 {
   "name": "w",
-  "packageManager": "yarn@4.5.1"
+  "scripts": {
+    "serve": "serve -s build -l 83"
+  }
 }

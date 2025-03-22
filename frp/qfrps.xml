@@ -42,11 +42,11 @@
   <description>Powered by Qio</description>
 
   <!-- Path to the executable, which should be started -->
-<executable>%BASE%\frp\frps.exe</executable>
-<arguments>-c %BASE%\frp\frps.ini</arguments>
-<workingdirectory>%BASE%\frp</workingdirectory>
+<executable>%BASE%\frps.exe</executable>
+<arguments>-c %BASE%\frps.ini</arguments>
+<workingdirectory>%BASE%</workingdirectory>
 <showwindow>true</showwindow>
-<logpath>%BASE%\frp\logs</logpath>
+<logpath>%BASE%\logs</logpath>
     <!--
     OPTION: stopparentprocessfirst
     If set, WinSW will terminate the parent process before stopping the children.
